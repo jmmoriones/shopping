@@ -1,0 +1,117 @@
+.footer{
+	&-container{
+		background-color: var(--colorOne);
+	}
+	&-content{
+		width: 80%;
+    margin: auto;
+	}
+	&-top{
+		padding-top: 4em;
+		&_title{
+			color: #FFF;
+			text-align: center;
+			margin-bottom: 2rem;
+			&-text{
+				font-size: 22px;
+		    font-weight: 600;
+		    line-height: 26px;
+			}
+		}
+		&_contentForm {
+			display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    @media screen and (min-width: 31.2rem){
+	    	flex-direction: row;
+	    }
+			&-input{
+		    outline: transparent;
+		    background-color: #444444;
+		    font-size: var(--small);
+		    padding: 1em 1.5em;
+		    color: var(--colorFour);
+		    margin-bottom: 1rem;
+		    @media screen and (min-width: 31.2rem){
+		    	margin-bottom: 0rem;
+		    	margin-right: 1rem;
+		    }
+		    @media screen and (min-width: 40.62rem){
+		    	width: 500px;
+		    }
+			}
+			&-inputBtn{
+				@include button(cuartery)
+			}
+		}
+	}
+	&-center{
+		padding: 2em 0;
+		@media screen and (min-width: 65.62rem){
+  		display: flex;
+    	justify-content: space-between;
+  	}
+		&_networkSocial{
+			margin-bottom: 1rem;
+			&-title{
+				color: #FFF;
+		    margin-bottom: 0.8rem;
+		    font-size: var(--title3);
+		    font-weight: 600;
+		    line-height: 1em;
+			}
+			&-icon{
+				color: var(--colorFour);
+		    margin-right: 0.8rem;
+		    font-size: var(--small);
+			}
+		}
+		&_itemMenuContainer{
+			display: grid;
+    	grid-template-columns: 100%;
+    	@media screen and (min-width: 33.12rem){
+    		grid-template-columns: repeat(2 ,1fr);
+    	}
+    	@media screen and (min-width: 50rem){
+    		grid-template-columns: repeat(4 ,1fr);
+    	}
+		}
+		&_itemMenu{
+			display: flex;
+	    flex-direction: column;
+	    margin-bottom: 1rem;
+	    @media screen and (min-width: 65.62rem){
+	    	margin-right: 1rem;
+	    }
+			&-title{
+				color: #FFF;
+				text-decoration: none;
+				font-size: var(--smaller);
+				font-weight: 600;
+				margin-bottom: 0.5rem;
+			}
+			&-itemLink{
+				text-decoration: none;
+				color: var(--colorFour);
+				font-size: var(--small);
+				margin-bottom: 0.15rem;
+				&:hover{
+					opacity: .6;
+    			transition: .3s all ease;
+				}
+			}
+		}
+	}
+	&-bottom{
+		padding: 2em 0;
+    border-top: 1px solid #3e3e3e;
+    &_left{
+    	text-align: center;
+    	&-text{
+    		color: var(--colorThree);
+    		font-size: var(--smaller);
+    	}
+    }
+	}
+}

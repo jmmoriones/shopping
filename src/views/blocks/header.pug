@@ -1,0 +1,20 @@
+block header
+	header.header-content
+		.header-logo
+			p Shooper.
+			#navToggleHeader.header-logo__logo-right
+				a#navToggleHeaderBtn.header-logo__logo(href="#headerNavContent")
+					i.fas.fa-bars
+		#headerNavContent.header-navToggle
+			nav.header-nav
+				ul.header-nav__ul
+					each val in ["Home", "Catalog", "Shop", "About", "Blog", "Contact"]
+						li.header-nav__ul-li
+							a.header-nav__ul-li_link(href="#")= val
+			.header-icons
+				i.fas.fa-search.header-icons__icon
+				i.fas.fa-user.header-icons__icon
+				i.fas.fa-heart.header-icons__icon
+				i.fas.fa-shopping-cart.header-icons__icon
+			a#navToggleHeaderBtnClose.header-closeBtn(href="#")
+				i.fas.fa-times.header-closeBtn_icon

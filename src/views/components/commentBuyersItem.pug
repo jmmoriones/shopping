@@ -1,0 +1,17 @@
+mixin commentBuyers(img, titleSmall, title, description, userPublish)
+	.commentBuyers-item
+		.commentBuyers-item__topProduct
+			img.commentBuyers-item__topProduct-img(src=img)
+			.commentBuyers-item__topProduct-right
+				p.commentBuyers-item__topProduct-right_titleSmall= titleSmall
+				p.commentBuyers-item__topProduct-right_title= title
+				.commentBuyers-item__topProduct-right_stars
+					i.fas.fa-star
+					i.fas.fa-star
+					i.fas.fa-star
+					i.fas.fa-star
+					i.fas.fa-star
+		.commentBuyers-item__description
+			p.commentBuyers-item__description-text= description
+		.commentBuyers-item__userPublish
+			p.commentBuyers-item__userPublish-text= userPublish

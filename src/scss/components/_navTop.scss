@@ -1,0 +1,190 @@
+.navTop{
+	&-content{
+		display: grid;
+		grid-template-columns: 100%;
+		width: 80%;
+	  margin: auto;
+		@media screen and (min-width: 64em){
+	    grid-template-columns: 210px 5fr;
+		}
+		&__right{
+			display: grid;
+			grid-template-columns: 100%;
+			width: 100%;
+	    justify-items: start;
+    	margin-top: 1em;
+			@media screen and (min-width: 64em){
+    		grid-template-columns: 4fr 2fr 1fr;
+    		width: 100%;
+	    	margin: 0;
+			}
+		}
+		&__logo{
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 64em){
+				width: 100%;
+		    margin: auto;
+		    justify-content: space-between;
+			}
+			&-left{
+				display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    &_icon{
+		    	margin-right: 10px;
+		    }
+		    &_text{
+		    	@include font(smaller);
+		    	@include var(color, colorThree);
+		    	font-weight: 600;
+		    	font-size: .8em;
+		    }
+			}
+			&-right{
+				&_button{
+					& > i {
+						@include var(color, colorThree);
+						font-size: .9em;
+					}
+					@media screen and (max-width: 64em){
+						display: inherit !important;
+					}
+				}
+			}
+		}
+		&__optionNav{
+			display: block;
+			width: 100%;
+			@media screen and (min-width: 64em){
+				display: flex;
+				justify-content: start;
+				align-items: center;
+			}
+			&-languageAndValue{
+				&_btn{
+					display: flex;
+			    justify-items: center;
+			    align-items: center;
+			    //flex-direction: row-reverse;
+			    font-size: .9em;
+			    width: 100%;
+			    border-right: 2px solid #DDD;
+			    background-color: transparent;
+			    padding-right: 10px;
+			    cursor: pointer;
+			    @media screen and (max-width: 64em){
+			    	border: 0;
+			    	margin-bottom: .8em;
+			    	padding: 0;
+			    	justify-content: space-between;
+			    }
+			    &-text {
+			    	@include var(color, colorThree);
+			    	@media screen and (max-width: 64em){
+			    		margin-left: 0px;
+			    		&:nth-child(1){
+				    		//margin-left: 8px;
+				    	}
+			    	}
+			    }
+			    &-icon{
+			    	@include var(color, colorThree);
+			    	&:nth-child(1){
+			    		margin-right: 0.5em;
+			    	}
+			    }
+				}
+				&_btnContainer{
+					display: flex;
+    			align-items: center;
+				}
+				&:nth-child(2){
+					margin: 0 .8em;
+					@media screen and (max-width: 64em){
+						margin: 0;
+					}
+				}
+			}
+			&-contact{
+				display: flex;
+    		justify-content: end;
+    		@media screen and (max-width: 64em){
+    			flex-direction: column;
+    		}
+    		&_contactText {
+    			//margin-bottom: .8em;
+    			font-size: .9em;
+    			&:nth-child(2){
+    				margin: 0 1.5em;
+    				@media screen and (max-width: 64em){
+    					margin: .8em 0;
+    				}
+    			}
+    		}
+			}
+		}
+		&__iconsSocial{
+			display: flex;
+	    align-items: center;
+	    justify-content: end;
+	    width: 100%;
+			@media screen and (max-width: 64em){
+				margin-top: 1em;
+		    align-items: center;
+		    justify-content: end;
+		    width: 140px;
+			}
+			&-icon{
+				cursor: pointer;
+    		font-size: .9em;
+    		flex: .25 0;
+    		text-align: right;
+    		@include var(color, colorFour);
+    		@media screen and (max-width: 64em){
+    			text-align: left;
+    		}
+			}
+		}
+	}
+	&-container{
+		@include var(background-color, colorTwo);
+		padding: .8em 0;
+	}
+}
+.icon-down{
+	margin-left: 8px;
+}
+.toggle{
+	display: none;
+}
+.navToggle{
+	/*position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transition: transform .3s ease-out;
+  transform: translateX(-100%);*/
+  @media screen and (min-width: 64em){
+		position: inherit;
+    transition: none;
+    transform: translate(0);
+    display: inherit;
+  }
+}
+.navToggle:target{ transform: translateX(0);}
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: steelblue;
+  @media screen and (min-width: 64em){
+		display: none;
+	}
+}

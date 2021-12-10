@@ -1,0 +1,29 @@
+.noticeWeek{
+	&-container{
+		background-color: #212121;
+	}
+	&-content{
+		text-align: center;
+		padding: .6em 0;
+	}
+	&-text{
+		color: #FFF;
+    font-family: 'Segoe UI Bold';
+    font-size: .8em;
+    letter-spacing: 3px;
+    &::before {
+	    font-family: 'Font Awesome 5 Free';
+	    content: "\f0e7";
+	    color: yellow;
+	    font-size: 12px;
+	    font-weight: bold;
+		}
+		&::after {
+	    font-family: 'Font Awesome 5 Free';
+	    content: "\f0e7";
+	    color: yellow;
+	    font-size: 12px;
+	    font-weight: bold;
+		}
+	}
+}

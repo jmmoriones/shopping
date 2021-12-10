@@ -1,0 +1,4 @@
+mixin articlesShopItem(img, title)
+	.articlesShopItem-item(style=`background-image: url(${img}), linear-gradient(rgb(0 0 0 / 10%),rgba(0,0,0,0.5));`)
+		p.h1.articlesShopItem-item__title= title
+		button.articlesShopItem-item__button=`Shop ${title}`

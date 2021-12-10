@@ -1,0 +1,6 @@
+mixin topClothes(img, titleType, title, price)
+	.topClothes-card
+		.topClothes-card__img(style=`background-image: url(${img});`)
+		p.topClothes-card__titleType= titleType
+		p.topClothes-card__title= title
+		p.topClothes-card__price= `$ ${price}`

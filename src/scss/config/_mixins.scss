@@ -1,0 +1,53 @@
+@mixin var($property,$var) {
+  #{$property}: map-get($vars,$var);
+}
+
+@mixin from($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints,$breakpoint)) {
+    @content;
+  }
+}
+
+// @include font(small)
+@mixin font($size) {
+  font-size: nth(map-get($fonts,$size),1);
+  line-height: nth(map-get($fonts,$size),2);
+}
+
+@mixin iconFontAwesome($content, $color, $size){
+  font-family: 'Font Awesome 5 Free';
+  content: $content;
+  color: $color;
+  font-size: $size;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+@mixin button ($type){
+  @if $type == primary {
+    background-color: #FFF;
+    color: $colorOne;
+    &:after{
+      @include iconFontAwesome("\f061", $colorOne, 1em);
+    }
+  } @else if $type == secondary{
+    background-color: transparent;
+    color: $colorTwo;
+    &:after{
+      @include iconFontAwesome("\f061", #f5f5f5, 1em);
+    }
+  } @else if $type == tertiary{
+    background-color: $colorOne;
+    color: #fff;
+    &:after{
+      @include iconFontAwesome("\f061", #FFF, 1em);
+    }
+  } @else if $type == cuartery{
+    background-color: $colorThree;
+    color: #fff;
+  }
+  padding: 1em 2em;
+  @include font(smaller);
+  font-weight: 600;
+  letter-spacing: 1px;
+}

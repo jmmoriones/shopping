@@ -1,0 +1,54 @@
+.articlesShop{
+	&-container{
+		height: 60vh;
+	}
+	&-content{
+		height: 100%;
+	}
+	&-one{
+		display: grid;
+    height: 100%;
+		@media screen and(min-width: 64em){
+	    grid-template-columns: repeat(3, calc(100% / 3));
+		}
+		@media screen and(max-width: 64em){
+	    grid-template-columns: repeat(3, calc(100% / 2));
+	    overflow-x: scroll;
+		}
+		@media screen and(max-width: 45em){
+			grid-template-columns: repeat(3, calc(100% / 1));
+	    overflow-x: scroll;
+		}
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		&::-moz-scrollbar {
+			display: none;
+		}
+	}
+}
+.articlesShopItem{
+	&-item{
+		background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    padding: 3em 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+		&__title{
+			grid-row: 2 / 3;
+	    justify-self: center;
+	    align-self: start;
+	    font-size: 3em;
+	    font-family: 'Segoe UI Bold';
+	    color: #FFF;
+		}
+		&__button{
+			grid-row: 3 / 4;
+	    justify-self: center;
+	    align-self: end;
+	    @include button(primary);
+		}
+	}
+}

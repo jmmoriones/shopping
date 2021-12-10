@@ -1,0 +1,104 @@
+.collectionGarment{
+	&-smallTitle{
+		text-align: center;
+		&_text{
+			@include font(smaller);
+			color: var(--colorFour);
+    	font-family: 'Segoe UI Bold';
+		}
+	}
+	&-title{
+		text-align: center;
+		margin: 1em 0;
+		&_text{
+			@include font(title3);
+			font-family: 'Segoe UI Bold';
+			color: var(--colorOne);
+		}
+	}
+	&-description{
+		text-align: center;
+		margin-bottom: 3em;
+		&_text{
+			@include font(small);
+			color: var(--colorOne);
+		}
+	}
+	&-content{
+		width: 80%;
+    margin: 3em auto;
+	}
+	&-container{
+	}
+	&-smallTitle{
+
+	}
+	&-title{
+
+	}
+	&-description{
+
+	}
+	&-collectionImage{
+		display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    @media screen and (max-width: 53em){
+      display: flex;
+    	flex-direction: column;
+  	}
+	}
+}
+.collectionGarment__collectionImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 12vw 5vh;
+  &-button {
+		@include button(secondary);
+	}
+  &-one{
+		grid-column: 1 / 2;
+		text-align: center;
+	}
+	&-two{
+		grid-column: 2 / 4;
+		@media screen and (max-width: 53em){text-align: center;}
+		& > button {
+			color: var(--colorOne);
+			&::after{
+				color: var(--colorOne);
+			}
+		}
+		& p {
+			color: var(--colorOne);
+		}
+	}
+	&-three{
+		grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    @media screen and (max-width: 53em){text-align: center;}
+    & > button {
+			color: var(--colorOne);
+			&::after{
+				color: var(--colorOne);
+			}
+		}
+		& p {
+			color: var(--colorOne);
+		}
+	}
+	&-four{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+	}
+	&-title{
+		margin-bottom: 0.3em;
+    font-family: 'Segoe UI Bold';
+    color: white;
+    font-size: 2em;
+    line-height: 1em;
+	}
+}

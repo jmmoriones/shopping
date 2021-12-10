@@ -1,0 +1,80 @@
+.topClothes{
+	&-container {
+		margin: 5em 0;
+	}
+	&-content{
+		width: 80%;
+    margin: auto;
+	}
+	&-top{
+		&__title{
+			@include font(title3);
+			font-family: 'Segoe UI Bold';
+			color: var(--colorOne);
+			text-align: center;
+		}
+		&__nav{
+			margin: 1.5em 0;
+			margin-bottom: 3em;
+			&-ul{
+				padding-left: 0;
+				display: flex;
+		    justify-content: center;
+		    align-items: center;
+				&_li{
+					list-style: none;
+					&-a{
+						color: var(--colorOne);
+						text-decoration: none;
+						font-weight: 600;
+						&:hover{
+							color: var(--colorFive);
+						  border-bottom: 1px solid var(--colorFive);
+						  padding-bottom: 0.4em;
+						}
+					}
+					&:nth-child(2){
+						margin: 0 1.5em;
+					}
+				}
+			}
+		}
+	}
+	&-contentCard{
+		display: grid;
+    grid-template-columns: 100%;
+    @media screen and (min-width: 46em){
+    	grid-template-columns: 1fr 1fr;
+    	grid-gap: 1.5em;
+    }
+    @media screen and (min-width: 64em){
+    	grid-template-columns: 1fr 1fr 1fr 1fr;
+    	grid-gap: 1em;
+    }
+	}
+	&-card{
+		display: flex;
+    margin-bottom: 2em;
+    flex-direction: column;
+		&__img{
+			background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center center;
+	    padding: 8em 0;
+		}
+		&__titleType{
+			@include font(smaller);
+			color: var(--colorFour);
+			margin-top: 1em;
+		}
+		&__title{
+			@include font(small);
+			font-family: 'Segoe UI Bold';
+			color: var(--colorOne);
+		}
+		&__price{
+			@include font(smaller);
+			color: var(--colorThree);
+		}
+	}
+}

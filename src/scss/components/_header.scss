@@ -1,0 +1,121 @@
+.header{
+	&-content{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+    margin: 2em auto;
+		@media screen and (min-width: 64em){
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&-logo{
+		@media screen and (min-width: 64em){
+			flex: .2;
+		}
+		@media screen and (max-width: 64em){
+			display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+		}
+		&__logo{
+			&-right{
+				@media screen and (min-width: 64em){
+					display: none;
+				}
+			}
+		}
+		& p {
+			font-size: 2em;
+	    font-family: 'Segoe UI Bold';
+	    @include var(color, colorOne);
+		}
+	}
+	&-navToggle{
+		@media screen and (min-width: 64em){
+			flex: .8;
+			display: flex;
+		}
+		@media screen and (max-width: 64em){
+			transform: translateX(-100%);
+		  position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    transition: transform 1s ease-out;
+	    background-color: var(--colorFive);
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    padding: 0 2em;
+		}
+	}
+	&-nav{
+		@media screen and (min-width: 64em){
+			flex: .7;
+		}
+		&__ul{
+			padding-left: 0;
+    	list-style: none;
+	    @media screen and (min-width: 64em){
+	    	display: flex;
+		    justify-content: center;
+		    align-items: center;
+	    }
+			&-li{
+				@media screen and (min-width: 64em){
+					flex: .09 .09 auto;
+					text-align: right;
+				}
+				@media screen and (max-width: 64em){
+					margin-bottom: 0.5em;
+				}
+				&_link{
+					text-decoration: none;
+			    color: #343a40;
+			    font-weight: 600;
+			    @media screen and (max-width: 64em){
+			    	color: var(--colorTwo);
+			    }
+				}
+			}
+		}
+	}
+	&-icons {
+		@media screen and (min-width: 64em){
+			flex: .3;
+			display: flex;
+    	justify-content: end;
+		}
+		@media screen and (max-width: 64em){
+			display: flex;
+			width: 300px;
+			margin-top: 1em;
+		}
+		&__icon{
+			@include var(color, colorThree);
+			font-size: .9em;
+  		flex: .125 0;
+  		text-align: right;
+  		@media screen and (max-width: 64em){
+  			flex: .09;
+    		text-align: left;
+    		@include var(color, colorTwo);
+  		}
+		}
+	}
+	&-closeBtn{
+		position: absolute;
+    top: 2em;
+    right: 2em;
+    &_icon{
+    	font-size: 2em;
+    	color: #FFF;
+    }
+    @media screen and (min-width: 64em){
+    	display: none;
+    }
+	}
+}
+.header-navToggle:target{ transform: translateX(0%);}

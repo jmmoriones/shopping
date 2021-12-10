@@ -1,0 +1,43 @@
+@font-face {
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Regular'), url('font-family/Segoe UI.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Italic'), url('font-family/Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Bold'), url('font-family/Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Bold Italic'), url('font-family/Segoe UI Bold Italic.woff') format('woff');
+}
+*, *::before, *::after {
+	border: 0;
+	margin: 0em;
+	box-sizing: border-box;
+}
+html{
+	font: {
+		family: "Segoe UI";
+	}
+}
+body{
+	@include font(small);
+}
