@@ -1,0 +1,44 @@
+extends ../templates/template
+
+block content
+	div.contact-container
+		div.contact-content
+			h1.contact-content_title Contact Us
+			aside.contact-content_aside
+				.contact-content_aside-info1
+					.contact-content_aside-info1_title
+						i.fas.fa-phone-alt.contact-content_aside-info1_title-titleIcon
+						p.contact-content_aside-info1_title-titleText Call to Us:
+					.contact-content_aside-info1_description
+						p.contact-content_aside-info1_description-text We're available from 10 am - 10 pm<br>EST, 7 days a week.
+					.contact-content_aside-info1_numberTel1
+						p.contact-content_aside-info1_numberTel1-title Customer Service:
+						p.contact-content_aside-info1_numberTel1-text 6-146-389-574
+					.contact-content_aside-info1_numberTel2
+						p.contact-content_aside-info1_numberTel2-title Careers:
+						p.contact-content_aside-info1_numberTel2-text 6-146-389-574
+				.contact-content_aside-info2
+					.contact-content_aside-info2_title
+						i.far.fa-envelope.contact-content_aside-info2_title-titleIcon
+						p.contact-content_aside-info2_title-titleText Write to Us:
+					.contact-content_aside-info2_description
+						p.contact-content_aside-info2_description-text Fill out our form and we will contact<br>you within 34 hours.
+					.contact-content_aside-info2_numberTel1
+						p.contact-content_aside-info2_numberTel1-title Customer Service:
+						p.contact-content_aside-info2_numberTel1-email customer@example.com
+					.contact-content_aside-info2_numberTel2
+						p.contact-content_aside-info2_numberTel2-title Careers:
+						p.contact-content_aside-info2_numberTel2-email customer@example.com
+				.contact-content_aside-info3
+					.contact-content_aside-info3_title
+						i.far.fa-envelope.contact-content_aside-info3_title-titleIcon
+						p.contact-content_aside-info3_title-titleText Find Us:
+					.contact-content_aside-info3_description
+						p.contact-content_aside-info3_description-text Want to visit our Offline Stores?
+						button.contact-content_aside-info3_description-button Go to Store Locator
+			section.contact-content_section
+				input.contact-content_section-inputName(type="text", placeholder="Your Name *", id="name")
+				input.contact-content_section-inputEmail(type="email", placeholder="Your Email *", id="email")
+				input.contact-content_section-inputTitle(type="title", placeholder="Title *", id="title")
+				textarea.contact-content_section-textareaMessage(type="message", placeholder="Message *", id="message", rows="5")
+				button.contact-content_section-inputBtn(type="submit", id="btnComment") Send Message

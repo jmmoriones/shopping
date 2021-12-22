@@ -38,6 +38,17 @@ if(app.get('env') === 'production'){
 		res.status(err.status || 500)
 		res.render('error', {err: err})
 	})
+}else if (app.get('env') === 'development'){
+	app.use((req, res, next) => {
+		let err = new Error()
+		err.status = 404
+		err.statusText = 'NOT FOUND'
+		next(err)
+	})
+	app.use((err, req, res, next) => {
+		res.status(err.status || 500)
+		res.render('error', {error: err})
+	})
 }
 
 export default app

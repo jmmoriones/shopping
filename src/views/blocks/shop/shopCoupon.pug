@@ -1,0 +1,9 @@
+mixin shopCoupon
+	section.shopCoupon-container
+		.shopCoupon-left
+			p.shopCoupon-left_title Coupon code:
+			.shopCoupon-left_inputs
+				input.shopCoupon-left_inputs-inputText(type="text", id="couponCode", placeholder="Enter coupon code*")
+				input.shopCoupon-left_inputs-inputButton(type="submit", id="couponButton", value="Apply")
+		.shopCoupon-right
+			input.shopCoupon-right_buttonUpdate(type="submit", id="updateBotton", value="Update Cart")

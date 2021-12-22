@@ -1,0 +1,114 @@
+.blog{
+	&-container{
+		border-top: 1px solid #ebebeb;
+	}
+	&-content{
+		margin: auto;
+		@media screen and (min-width: 1200px){
+	    max-width: 1280px;
+	  }
+	  @media screen and (max-width: 1999px){
+	    max-width: 80vw;
+	  }
+		&__title{
+			@include font(title3);
+			font-family: 'Segoe UI Bold';
+			color: var(--colorOne);
+			text-align: center;
+			margin: 1.5rem 0;
+    	margin-top: 3rem;
+		}
+		&__nav{
+			margin: 1.5em 0;
+			margin-bottom: 3em;
+			&-ul{
+				padding-left: 0;
+				display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    @media screen and (max-width: 480px){
+		    	flex-direction: column;
+		    }
+				&_li{
+					list-style: none;
+					margin: 0 1em;
+					@media screen and (max-width: 480px){
+						margin-bottom: 0.5rem;
+					}
+					&-a{
+						color: var(--colorOne);
+						text-decoration: none;
+						font-weight: 600;
+						&:hover{
+							color: var(--colorFive);
+						  border-bottom: 1px solid var(--colorFive);
+						  padding-bottom: 0.4em;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-posts{
+		@media screen and (min-width: 481px){
+			display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+		}
+	}
+	&-blogCard{
+		@media screen and (min-width: 481px){
+			flex: 0 0 48%;
+		}
+		&_imageContainer{
+			height: 250px;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	    position: relative;
+	    @media screen and (min-width: 750px){
+	    	height: 400px;
+	    }
+			&-date{
+				position: absolute;
+		    top: 10%;
+		    background-color: #FFF;
+		    font-size: 12px;
+		    padding: 0.2rem 1rem;
+		    font-weight: 600;
+		    color: var(--colorOne);
+			}
+		}
+		&_title{
+	    font-size: 22px;
+	    margin-top: 1rem;
+	    font-weight: 600;
+		}
+		&_description{
+	    color: var(--colorThree);
+	    font-size: 15px;
+	    margin: 1rem 0;
+		}
+		&_button{
+			text-align: left;
+	    padding: 0.5rem 0;
+	    margin-bottom: 3rem;
+	    padding-right: 15px;
+	    background-color: transparent;
+	    font-weight: 600;
+	    cursor: pointer;
+	    &:after {
+		    font-family: 'Font Awesome 5 Free';
+		    content: "\f061";
+		    color: var(--colorOne);
+		    font-size: 14px;
+		    font-weight: bold;
+		    margin-left: 10px;
+    		transition: margin-left .15s ease-in-out;
+			}
+			&:hover:after {
+			  margin-left: 20px;
+			}
+		}
+	}
+}

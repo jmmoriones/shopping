@@ -1,44 +1,45 @@
-block footer
-	.footer-content
-		.footer-top
-			.footer-top_title
-				p.footer-top_title-text Want style Ideals and Treats?
-			.footer-top_contentForm
-				input.footer-top_contentForm-input(type="email", placeholder="Enter Email *", required)
-				input.footer-top_contentForm-inputBtn(type="submit", value="Subscribe")
-		.footer-center
-			.footer-center_networkSocial
-				p.footer-center_networkSocial-title Shooper
-				i.fab.fa-facebook.footer-center_networkSocial-icon
-				i.fab.fa-twitter.footer-center_networkSocial-icon
-				i.fab.fa-instagram.footer-center_networkSocial-icon
-				i.fab.fa-medium.footer-center_networkSocial-icon
-				i.fab.fa-youtube.footer-center_networkSocial-icon
-			.footer-center_itemMenuContainer
-				.footer-center_itemMenu
-					p.footer-center_itemMenu-title SUPPORT
-					a.footer-center_itemMenu-itemLink(href="#") Contact Us
-					a.footer-center_itemMenu-itemLink(href="#") FAQs
-					a.footer-center_itemMenu-itemLink(href="#") Size Guide
-					a.footer-center_itemMenu-itemLink(href="#") Shipping & Returns
-				.footer-center_itemMenu
-					p.footer-center_itemMenu-title SHOP
-					a.footer-center_itemMenu-itemLink(href="#") Men's Shopping
-					a.footer-center_itemMenu-itemLink(href="#") Women's Shopping
-					a.footer-center_itemMenu-itemLink(href="#") Kids' Shopping
-					a.footer-center_itemMenu-itemLink(href="#") Discounts
-				.footer-center_itemMenu
-					p.footer-center_itemMenu-title COMPANY
-					a.footer-center_itemMenu-itemLink(href="#") Our Story
-					a.footer-center_itemMenu-itemLink(href="#") Careers
-					a.footer-center_itemMenu-itemLink(href="#") Terms & Conditions
-					a.footer-center_itemMenu-itemLink(href="#") Privacy & Cookie policy
-				.footer-center_itemMenu
-					p.footer-center_itemMenu-title CONTACT
-					a.footer-center_itemMenu-itemLink(href="#") 1-202-555-0105
-					a.footer-center_itemMenu-itemLink(href="#") 1-202-555-0106
-					a.footer-center_itemMenu-itemLink(href="#") help@shopper.com
-	.footer-bottom
-		.footer-bottom_left
-			p.footer-bottom_left-text &copy; 2021 All rights reserved. Designed by JMMoriones
-		.footer-bottom_right
+mixin footer
+	.footer-container
+		.footer-content
+			.footer-top
+				.footer-top_title
+					p.footer-top_title-text Want style Ideals and Treats?
+				.footer-top_contentForm
+					input.footer-top_contentForm-input(type="email", placeholder="Enter Email *", required)
+					input.footer-top_contentForm-inputBtn(type="submit", value="Subscribe")
+			.footer-center
+				.footer-center_networkSocial
+					p.footer-center_networkSocial-title Shooper
+					i.fab.fa-facebook.footer-center_networkSocial-icon
+					i.fab.fa-twitter.footer-center_networkSocial-icon
+					i.fab.fa-instagram.footer-center_networkSocial-icon
+					i.fab.fa-medium.footer-center_networkSocial-icon
+					i.fab.fa-youtube.footer-center_networkSocial-icon
+				.footer-center_itemMenuContainer
+					.footer-center_itemMenu
+						p.footer-center_itemMenu-title SUPPORT
+						a.footer-center_itemMenu-itemLink(href="#") Contact Us
+						a.footer-center_itemMenu-itemLink(href="#") FAQs
+						a.footer-center_itemMenu-itemLink(href="#") Size Guide
+						a.footer-center_itemMenu-itemLink(href="#") Shipping & Returns
+					.footer-center_itemMenu
+						p.footer-center_itemMenu-title SHOP
+						a.footer-center_itemMenu-itemLink(href="#") Men's Shopping
+						a.footer-center_itemMenu-itemLink(href="#") Women's Shopping
+						a.footer-center_itemMenu-itemLink(href="#") Kids' Shopping
+						a.footer-center_itemMenu-itemLink(href="#") Discounts
+					.footer-center_itemMenu
+						p.footer-center_itemMenu-title COMPANY
+						a.footer-center_itemMenu-itemLink(href="#") Our Story
+						a.footer-center_itemMenu-itemLink(href="#") Careers
+						a.footer-center_itemMenu-itemLink(href="#") Terms & Conditions
+						a.footer-center_itemMenu-itemLink(href="#") Privacy & Cookie policy
+					.footer-center_itemMenu
+						p.footer-center_itemMenu-title CONTACT
+						a.footer-center_itemMenu-itemLink(href="#") 1-202-555-0105
+						a.footer-center_itemMenu-itemLink(href="#") 1-202-555-0106
+						a.footer-center_itemMenu-itemLink(href="#") help@shopper.com
+		.footer-bottom
+			.footer-bottom_left
+				p.footer-bottom_left-text &copy; 2021 All rights reserved. Designed by JMMoriones
+			.footer-bottom_right

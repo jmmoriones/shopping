@@ -1,0 +1,34 @@
+.aboutInstagramImage{
+	&-container{
+		margin-bottom: 3rem;
+	}
+	&-content{
+		width: 80%;
+    margin: auto;
+    position: relative;
+		&_images{
+			display: grid;
+	    grid-template-columns: repeat(4,1fr);
+	    grid-auto-rows: 1fr;
+	    @media screen and (min-height: 780px){
+	    	grid-template-columns: repeat(8,1fr);
+	    }
+			&-img{
+				width: 100%;
+			}
+		}
+		&_button{
+			position: absolute;
+	    left: 45%;
+	    right: 45%;
+	    top: 40%;
+	    bottom: 40%;
+	    font-size: 15px;
+	    color: var(--colorOne);
+	    background-color: #FFF;
+	    font-weight: 600;
+	    padding: 1rem 2rem;
+	    height: fit-content;
+		}
+	}
+}

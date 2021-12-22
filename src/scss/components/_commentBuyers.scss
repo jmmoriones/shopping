@@ -87,8 +87,8 @@
   width: 100%;
 }
 .glider-dot.active {
-  background: var(--colorFive);
+  background: var(--colorFive) !important;
 }
-.glider-dot{
-	margin-top: 1rem;
+.glider-dots{
+	margin-top: 1rem !important;
 }

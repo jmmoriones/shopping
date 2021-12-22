@@ -1,7 +1,8 @@
-include ../components/articlesShopItem.pug
-block articlesShop
-	.articlesShop-content
-		.articlesShop-one 
-			+articlesShopItem('./img/women-shop.jpg', 'Women')
-			+articlesShopItem('./img/women-shop.jpg', 'Kid')
-			+articlesShopItem('./img/women-shop.jpg', 'Men')
+include ../components/articlesShopItem
+mixin articlesShop
+	.articlesShop-container
+		.articlesShop-content
+			.articlesShop-one 
+				+articlesShopItem('https://picsum.photos/id/37/800/700', 'Women')
+				+articlesShopItem('https://picsum.photos/id/38/800/700', 'Kid')
+				+articlesShopItem('https://picsum.photos/id/39/800/700', 'Men')

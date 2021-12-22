@@ -1,0 +1,86 @@
+.shopTotal{
+  &-container {
+    flex: 1 0 100%;
+    @media screen and (min-width: 980px){
+      flex: 0 0 29%;
+    }
+  }
+  &-top{
+    background-color: var(--colorTwo);
+    padding: 1rem 1.5rem;
+    &_division1{
+      &-text{
+        font-size: 15px;
+        color: var(--colorOne);
+      }
+      &-value{
+        font-size: 15px;
+        color: var(--colorOne);
+      }
+    }
+    &_division2{
+      &-text{
+        font-size: 15px;
+        color: var(--colorOne);
+      }
+      &-value{
+        font-size: 15px;
+        color: var(--colorOne);
+      }
+    }
+    &_division3{
+      &-text{
+        font-weight: 600;
+      }
+      &-value{
+        font-weight: 600;
+      }
+    }
+    &_division4{
+      text-align: center;
+      padding: 1rem 0;
+      &-text{
+        color: var(--colorThree);
+        font-size: 15px;
+      }
+    }
+  }
+  &-center{
+    margin-top: 1.5rem;
+    &_btnCheckout{
+      @include button(tertiary);
+      width: 100%;
+      cursor: pointer;
+      &:after{display:none;}
+    }
+  }
+  &-bottom{
+    margin-top: 1rem;
+    &_btnLeft{
+      background-color: transparent;
+      padding: 0.5rem 0;
+      width: 100%;
+      text-align: left;
+      color: var(--colorOne);
+      font-weight: 550;
+      font-size: 14px;
+      cursor: pointer;
+      &:before{
+        font-family: 'Font Awesome 5 Free';
+        content: "\f060";
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.shopTotal-top_division1, .shopTotal-top_division2, .shopTotal-top_division3 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 1rem;
+}

@@ -1,0 +1,21 @@
+.shop-conteiner{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  @media screen and (min-width: 1200px){
+    max-width: 1280px;
+  }
+  @media screen and (max-width: 1999px){
+    max-width: 80vw;
+  }
+}
+.shop-title{
+  line-height: 1em;
+  text-align: center;
+  margin: 4rem 0;
+  font-size: var(--title2);
+  font-weight: 600;
+}

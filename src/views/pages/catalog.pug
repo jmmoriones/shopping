@@ -1,7 +1,540 @@
 extends ../templates/template
-block navTop
-	include ../blocks/navTop.pug
-block header
-	include ../blocks/header.pug
-block footer
-	include ../blocks/fotter.pug
+include ../blocks/noticeWeek.pug
+include ../components/topClothesItem.pug
+block content
+	+noticeWeek
+	.catalog-container
+		aside.catalog-sidebarLeft
+			.sidebarLeft-item#dropdown
+				button.sidebarLeft-item_text Category
+				ul#sidebarContentUlContent.sidebarLeft-item_ul
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+			.sidebarLeft-item#dropdown
+				button.sidebarLeft-item_text Category
+				ul#sidebarContentUlContent.sidebarLeft-item_ul
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+			.sidebarLeft-item#dropdown
+				button.sidebarLeft-item_text Category
+				ul#sidebarContentUlContent.sidebarLeft-item_ul
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+			.sidebarLeft-item#dropdown
+				button.sidebarLeft-item_text Category
+				ul#sidebarContentUlContent.sidebarLeft-item_ul
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress			
+			.sidebarLeft-item#dropdown
+				button.sidebarLeft-item_text Category
+				ul#sidebarContentUlContent.sidebarLeft-item_ul
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+			.sidebarLeft-item#dropdown
+				button.sidebarLeft-item_text Category
+				ul#sidebarContentUlContent.sidebarLeft-item_ul
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+					a#linkSidebarTitle.sidebarLeft-item_ul-a(href="#") All Products
+					#sidebarContentList.sidebarLeft-item_ul-content
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+						li.sidebarLeft-item_ul-content_inputCheck
+							input.sidebarLeft-item_ul-content_inputCheck-input(type="checkbox")
+							label.sidebarLeft-item_ul-content_inputCheck-text A-line Dress
+		section.catalog-sidebarRight
+			.glider-contain.glider2-contain
+				.glider2
+					div.gliderItem
+						div.gliderItem-slide
+							p.gliderItem-slide_text 2019 Summer<br>Collection
+							button.gliderItem-slide_button View Collection
+						img.gliderItem-img(alt='Test' src='https://picsum.photos/id/1/600/300')
+					div.gliderItem
+						div.gliderItem-slide
+							p.gliderItem-slide_text 2019 Summer<br>Collection
+							button.gliderItem-slide_button View Collection
+						img.gliderItem-img(alt='Test' src='https://picsum.photos/id/2/600/300')
+					div.gliderItem
+						div.gliderItem-slide
+							p.gliderItem-slide_text 2019 Summer<br>Collection
+							button.gliderItem-slide_button View Collection
+						img.gliderItem-img(alt='Test' src='https://picsum.photos/id/3/600/300')
+				#dots2
+			.catalog-sidebarRight_clothing
+				section.catalog-sidebarRight_clothing-header
+					.catalog-sidebarRight_clothing-header_left
+						p.catalog-sidebarRight_clothing-header_left-title Women's Clothing
+						p.catalog-sidebarRight_clothing-header_left-breadcumb Home > Catalog
+					.catalog-sidebarRight_clothing-header_right
+						button.catalog-sidebarRight_clothing-header_right-button Most popular
+				section.catalog-sidebarRight_clothing-cardShip
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+					.catalog-sidebarRight_clothing-cardShip_ship
+						p.catalog-sidebarRight_clothing-cardShip_ship-text Shift dress
+						i.fas.fa-times.catalog-sidebarRight_clothing-cardShip_ship-icon
+				section.catalog-sidebarRight_clothing-itemsShop
+					+topClothesItem("https://picsum.photos/id/4/600/300", "Shoes", "Leather mid-hell Sandalls", "129.00")
+					+topClothesItem("https://picsum.photos/id/5/600/300", "Shoes", "Leather mid-hell Sandalls", "129.00")
+					+topClothesItem("https://picsum.photos/id/6/600/300", "Shoes", "Leather mid-hell Sandalls", "129.00")
+					+topClothesItem("https://picsum.photos/id/7/600/300", "Shoes", "Leather mid-hell Sandalls", "129.00")
+					+topClothesItem("https://picsum.photos/id/8/600/300", "Shoes", "Leather mid-hell Sandalls", "129.00")
+					+topClothesItem("https://picsum.photos/id/9/600/300", "Shoes", "Leather mid-hell Sandalls", "129.00")
+	script.
+		window.addEventListener('load', function(){
+			window._ = new Glider(document.querySelector('.glider2'), {
+				slidesToShow: 1, //'auto',
+				slidesToScroll: 1,
+				itemWidth: 100,
+				draggable: false,
+				scrollLock: true,
+				dots: '#dots2',
+				rewind: true
+			});
+		})

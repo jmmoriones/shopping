@@ -1,0 +1,78 @@
+.aboutMessageUser-container{
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+.aboutMessageUser-content{
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.glider3-contain{
+}
+.gliderItem3{
+  &-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100vw / 1.8);
+    margin: auto;
+    &_smallTitle{
+      font-size: 13px;
+      line-height: 20px;
+      color: var(--colorFour);
+      font-family: 'Segoe UI Bold';
+      margin-bottom: 1rem;
+    }
+    &_title{
+      font-size: var(--title2);
+      line-height: 30px;
+      font-weight: 600;
+      color: var(--colorOne);
+      margin-bottom: 3rem;
+    }
+    &_description{
+      font-size: 24px;
+      line-height: 1.2em;
+      color: var(--colorOne);
+      font-family: 'Segoe UI Italic';
+      text-align: justify;
+    }
+    &_publishUser{
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--colorThree);
+      margin-top: 2.5rem;
+    }
+  }
+  &-button{
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &_left{
+      background-color: transparent;
+      cursor: pointer;
+      &-icon{
+        color: var(--colorFour);
+        font-size: 25px;
+      }
+    }
+    &_right{
+      background-color: transparent;
+      cursor: pointer;
+      &-icon{
+        color: var(--colorFour);
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+#dots3 {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  right: 0;
+}

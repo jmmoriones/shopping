@@ -1,14 +1,15 @@
 include ../components/collectionImage
-block collectionGrament
-	.collectionGarment-content
-		.collectionGarment-smallTitle
-			p.collectionGarment-smallTitle_text NEW COLLECTION
-		.collectionGarment-title
-			p.collectionGarment-title_text Best Picks 2019
-		.collectionGarment-description
-			p.collectionGarment-description_text Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, <br> above fly brought Very green.
-		.collectionGarment-collectionImage
-			+collectionImage('img/women.jpg', 'Bags Collection', 'one')
-			+collectionImage('img/women.jpg', 'Bags Collection', 'two')
-			+collectionImage('img/women.jpg', 'Bags Collection', 'three')
-			+collectionImage('img/women.jpg', 'Bags Collection', 'four')
+mixin collectionGarment
+	.collectionGrament-container
+		.collectionGarment-content
+			.collectionGarment-smallTitle
+				p.collectionGarment-smallTitle_text NEW COLLECTION
+			.collectionGarment-title
+				p.collectionGarment-title_text Best Picks 2019
+			.collectionGarment-description
+				p.collectionGarment-description_text Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, <br> above fly brought Very green.
+			.collectionGarment-collectionImage
+				+collectionImage('https://picsum.photos/id/40/900/500', 'Bags Collection', 'one')
+				+collectionImage('https://picsum.photos/id/41/900/500', 'Bags Collection', 'two')
+				+collectionImage('https://picsum.photos/id/42/900/500', 'Bags Collection', 'three')
+				+collectionImage('https://picsum.photos/id/43/900/500', 'Bags Collection', 'four')

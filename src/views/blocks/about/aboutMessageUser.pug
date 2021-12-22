@@ -1,0 +1,47 @@
+mixin aboutMessageUser
+	section.aboutMessageUser-container
+		.aboutMessageUser-content
+			.glider3-contain
+				.glider3
+					div.gliderItem3
+						div.gliderItem3-slide
+							p.gliderItem3-slide_smallTitle WHAT BUYERS SAY
+							p.gliderItem3-slide_title Customers Reviews
+							p.gliderItem3-slide_description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							p.gliderItem3-slide_publishUser Darrell Baker, 18 May 2019
+					div.gliderItem3
+						div.gliderItem3-slide
+							p.gliderItem3-slide_smallTitle WHAT BUYERS SAY
+							p.gliderItem3-slide_title Customers Reviews
+							p.gliderItem3-slide_description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							p.gliderItem3-slide_publishUser Darrell Baker, 18 May 2019
+					div.gliderItem3
+						div.gliderItem3-slide
+							p.gliderItem3-slide_smallTitle WHAT BUYERS SAY
+							p.gliderItem3-slide_title Customers Reviews
+							p.gliderItem3-slide_description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							p.gliderItem3-slide_publishUser Darrell Baker, 18 May 2019
+				#dots3
+				div.gliderItem3-button
+					button.glider-prev3.gliderItem3-button_left(aria-label="Previous")
+						i.fas.fa-chevron-left.gliderItem3-button_left-icon
+					button.glider-next3.gliderItem3-button_right(aria-label="Next")
+						i.fas.fa-chevron-right.gliderItem3-button_right-icon
+	script.
+		window.addEventListener('load', function(){
+			window._ = new Glider(document.querySelector('.glider3'), {
+				slidesToShow: 1, //'auto',
+				slidesToScroll: 1,
+				itemWidth: 100,
+				draggable: true,
+				scrollLock: true,
+				dots: '#dots3',
+				rewind: true,
+				arrows: {
+					prev: '.glider-prev3',
+					next: '.glider-next3'
+				},
+				dragVelocity: 1,
+				duration: 2,
+			});
+		})

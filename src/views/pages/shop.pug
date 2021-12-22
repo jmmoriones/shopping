@@ -1,0 +1,10 @@
+extends ../templates/template
+include ../blocks/shop/shopCard.pug
+include ../blocks/shop/shopCoupon.pug
+include ../blocks/shop/shopTotal.pug
+block content
+	h1.shop-title Shopping Cart
+	.shop-conteiner
+		+shopCard
+		+shopTotal
+		+shopCoupon

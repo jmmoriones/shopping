@@ -1,35 +1,21 @@
+include ../blocks/navTop.pug
+include ../blocks/header.pug
+include ../blocks/fotter.pug
 doctype html
 html(lang="es")
 	head
-		title CSS Desde Cero - Proyecto final
+		title=title
 		meta(name="viewport" content="width=device-width,user-scalable=no, initial-scale=1")
 		meta(charset="UTF-8")
-		link(rel="stylesheet", href="styles.css")
+		block metatag
 		link(rel="stylesheet", href="fontawesome.min.css")
 		link(rel="stylesheet", href="glider.min.css")
+		link(rel="stylesheet", href="styles.css")
+		script(src="glider.min.js")
 	body
-		.navTop-container
-			block navTop
-		header.header-container
-			block header
-		.noticeWeek-container
-			block noticeWeek
-		.articlesShop-container
-			block articlesShop
-		.charactericsShop-container
-			block charactericsShop
-		.collectionGarment-container
-			block collectionGarment
-		.topClothes-container
-			block topClothes
-		.discountSummer-container
-			block discountSummer
-		.commentBuyers-container
-			block commentBuyers
-		.shopper-container
-			block shopper
-		.footer-container
-			block footer
+		+navTop
+		+header
+		block content
+		+footer
 	script(src="/reload/reload.js")
 	script(src="script.js")
-	script(src="glider.min.js")

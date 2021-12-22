@@ -1,8 +1,6 @@
-extends includes/layout.pug
-block metatags
-  title= `Error N° ${err.status}: ${err.message}`
+extends templates/template.pug
 block content
   main.App
-    h1= `Error N° ${err.status}: ${err.message}`
+    h1= `Error N° ${error.status}: ${error.statusText}`
     div
-      pre= err.stack
+      pre= error.stack

@@ -1,0 +1,19 @@
+extends ../templates/template.pug
+include ../blocks/about/aboutSlide.pug
+include ../blocks/about/aboutStory.pug
+include ../blocks/about/aboutDemocracy.pug
+include ../blocks/about/aboutSomos.pug
+include ../blocks/about/aboutReflexion.pug
+include ../blocks/about/aboutGallery.pug
+include ../blocks/about/aboutMessageUser.pug
+include ../blocks/about/aboutInstagramImage.pug
+
+block content
+	+aboutSlide([{image: "https://picsum.photos/id/10/1200/500", text: "We believe we can all make a stylish"}])
+	+aboutStory
+	+aboutDemocracy
+	+aboutSomos
+	+aboutReflexion
+	+aboutGallery
+	+aboutMessageUser
+	+aboutInstagramImage

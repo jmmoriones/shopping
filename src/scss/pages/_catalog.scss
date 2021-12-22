@@ -1,0 +1,229 @@
+.catalog{
+    &-sidebarRight{
+        &_clothing{
+            margin-top: 2.5rem;
+            &-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &_left{
+                    &-title{
+                        font-size: var(--title2);
+                        font-weight: 600;
+                        line-height: var(--title2);
+                    }
+                    &-breadcumb{
+                        font-size: var(--smaller);
+                        margin-top: 0.4rem;
+                        color: var(--colorFour);
+                    }
+                }
+                &_right{
+                    &-button{
+                        background-color: transparent;
+                        border: 1px solid #c9c9c9;
+                        padding: 0.6em 1rem;
+                        color: var(--colorOne);
+                        font-size: 15px;
+                        font-family: "Segoe UI";
+                        &:after {
+                            font-family: 'Font Awesome 5 Free';
+                            content: "\f078";
+                            color: var(--colorOne);
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            &-cardShip{
+                margin-top: 1.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                &_ship{
+                    width: fit-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0.8rem;
+                    padding: 0.5rem;
+                    background-color: var(--colorTwo);
+                    margin-bottom: 0.8rem;
+                    &-text{
+                        color: var(--colorThree);
+                        margin-right: 8px;
+                    }
+                    &-icon{
+                        color: var(--colorFour);
+                    }
+                }
+            }
+            &-itemsShop{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 0 2rem;
+                margin-top: 2rem;
+                @media screen and (max-width: 64rem){
+                    grid-template-columns: 1fr 1fr;
+                }
+                @media screen and (max-width: 30.31rem){
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+.catalog-container{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    @media screen and(max-width: 64rem){
+        max-width: 90%;
+    }
+}
+.catalog-sidebarLeft{
+    @media screen and(min-width: 45rem){
+        //background-color: red;
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2em;
+    }
+}
+.catalog-sidebarRight{
+    @media screen and(min-width: 45rem){
+        //background-color: yellow;
+        width: 75%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.glider2-contain {
+    position: relative;
+    width: 100% !important;
+}
+div#dots2 {
+    position: absolute;
+    margin-top: 0 !important;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+.gliderItem {
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    align-items: stretch;
+    margin: 0;
+}
+.sidebarLeft-item{
+    margin-bottom: 1.5rem;
+}
+.gliderItem-slide {
+    background-color: var(--colorTwo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2em;
+}
+.gliderItem-slide_text {
+    color: var(--colorOne);
+    padding: .5em 0;
+    font-size: var(--title3);
+    font-family: 'Segoe UI Bold';
+    line-height: 1em;
+}
+.gliderItem-slide_button{
+    background-color: transparent;
+    color: var(--colorOne);
+    padding: 1em 0;
+    font-size: 14px;
+    font-family: 'Segoe UI Bold';
+    &:after {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f061";
+        color: var(--colorOne);
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+}
+.sidebarLeft-item_text {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--colorOne);
+    text-align: left;
+    padding: 0.4em 0;
+    border-bottom: 1px solid #d7d7d7;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    &:after {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f078";
+        color: var(--colorOne);
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+.gliderItem-img {
+    height: 24rem;
+    object-fit: cover;
+}
+.sidebarLeft{
+    &-item{
+        margin-bottom: 0.6rem;
+        &_text {
+            width: 100%;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--colorOne);
+            text-align: left;
+            padding: 0.4em 0;
+            border-bottom: 1px solid #d7d7d7;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        &_ul {
+            padding-left: 0;
+            margin-top: 1em;
+            &-a {
+                text-decoration: none;
+                color: var(--colorThree);
+                font-size: 16px;
+            }
+            &-content {
+                margin: 0.35em;
+                margin-left: 1em;
+                &_inputCheck {
+                    margin-bottom: 0.3em;
+                    &-input {
+                        margin-right: 10px;
+                    }
+                    &-text {
+                        text-decoration: none;
+                        color: var(--colorThree);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*.glider2-contain{
+    margin: 0 auto;
+}
+.gliderItem {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+}
+.gliderItem-img{
+    max-height: 20rem;
+}*/

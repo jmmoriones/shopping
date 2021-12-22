@@ -19,5 +19,36 @@
 @import 'components/shopper';
 @import 'components/brand';
 @import 'components/fotter';
+@import 'components/about/aboutSlide';
+@import 'components/about/aboutStory';
+@import 'components/about/aboutDemocracy';
+@import 'components/about/aboutSomos';
+@import 'components/about/aboutReflexion';
+@import 'components/about/aboutGallery';
+@import 'components/about/aboutMessageUser';
+@import 'components/about/aboutInstagramImage';
+@import 'components/shop/shopCard';
+@import 'components/shop/shopCoupon';
+@import 'components/shop/shopTotal';
 // Theme
 // Utils
+@import 'utils/utils';
+
+// Pages
+@import 'pages/catalog';
+@import 'pages/about';
+@import 'pages/shop';
+@import 'pages/contact';
+@import 'pages/blog';
+@import 'pages/blog-post';
+
+
+.sidebarLeft-item_ul, .sidebarLeft-item_ul-content{
+	height: 0px;
+  overflow: hidden;
+  transition: height .3s;
+}
+.toggleSidebarList{
+	height: auto;
+	transition: height .3s;
+}

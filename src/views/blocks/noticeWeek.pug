@@ -1,3 +1,5 @@
-block noticeWeek
-	.noticeWeek-content
-		p.noticeWeek-text HAPPY HOLIDAY DEALS ON EVERYTHING
+mixin noticeWeek(show=true)
+	-if(show)
+		.noticeWeek-container
+			.noticeWeek-content
+				p.noticeWeek-text HAPPY HOLIDAY DEALS ON EVERYTHING

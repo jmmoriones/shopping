@@ -5,7 +5,7 @@
   "main": "package.json",
   "scripts": {
     "serve": "nodemon --watch src -e pug,scss,js,json --exec babel-node server.js",
-    "css":"node-sass src/scss/styles.scss -o ./public/ -w src/scss/styles.scss",
+    "css":"node-sass src/scss/styles.scss -o ./public/ -w src/scss/styles.scss --output-style compressed",
     "watchify": "watchify ./src/js/index.js -d -o ./public/script.js -t [babelify --presets[env]] -v",
     "browserify": "browserify ./src/js/index.js -d -o ./public/script.js -t [babelify --presets[env]]",
     "start": "npm run css | npm run watchify | npm run serve "

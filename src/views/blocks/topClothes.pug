@@ -1,22 +1,23 @@
-include ../components/topClothes
-block topClothes
-	.topClothes-content
-		.topClothes-top
-			p.topClothes-top__title Top month Sellers
-			.topClothes-top__nav
-				ul.topClothes-top__nav-ul
-					li.topClothes-top__nav-ul_li
-						a.topClothes-top__nav-ul_li-a(href="#") Women
-					li.topClothes-top__nav-ul_li
-						a.topClothes-top__nav-ul_li-a(href="#") Men
-					li.topClothes-top__nav-ul_li
-						a.topClothes-top__nav-ul_li-a(href="#") Kids
-		.topClothes-contentCard
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
-			+topClothes('img/women.jpg', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+include ../components/topClothesItem
+mixin topClothes
+	.topClothes-container
+		.topClothes-content
+			.topClothes-top
+				p.topClothes-top__title Top month Sellers
+				.topClothes-top__nav
+					ul.topClothes-top__nav-ul
+						li.topClothes-top__nav-ul_li
+							a.topClothes-top__nav-ul_li-a(href="#") Women
+						li.topClothes-top__nav-ul_li
+							a.topClothes-top__nav-ul_li-a(href="#") Men
+						li.topClothes-top__nav-ul_li
+							a.topClothes-top__nav-ul_li-a(href="#") Kids
+			.topClothes-contentCard
+				+topClothesItem('https://picsum.photos/id/44/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/45/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/46/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/47/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/48/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/49/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/50/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+				+topClothesItem('https://picsum.photos/id/51/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')

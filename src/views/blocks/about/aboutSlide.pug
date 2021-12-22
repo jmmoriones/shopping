@@ -1,0 +1,5 @@
+mixin aboutSlide(slide)
+	section.aboutSlide
+		each item in slide
+			.aboutSlide-item(style=`background-image: url(${item.image});`)
+				p.aboutSlide-item_text= item.text

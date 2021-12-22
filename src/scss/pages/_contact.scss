@@ -1,0 +1,206 @@
+.contact{
+	&-container{
+	
+	}
+	&-content{
+		margin: auto;
+		@media screen and (min-width: 1200px){
+	    max-width: 1280px;
+	  }
+	  @media screen and (max-width: 1999px){
+	    max-width: 80vw;
+	  }
+	  @media screen and (min-width: 820px){
+	  	display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+	  }
+		&_title{
+			text-align: center;
+			width: 100%;
+	    line-height: 1em;
+	    text-align: center;
+	    margin: 2rem 0;
+		}
+		&_aside{
+			@media screen and (min-width: 820px){
+				width: 22%;
+			}
+			&-info1{
+				border-bottom: 1px solid #d9d9d9;
+    		padding-bottom: 2rem;
+				&_title{
+					display: flex;
+    			margin-top: 2rem;
+					&-titleIcon{
+						font-size: 20px;
+				    color: var(--colorFive);
+				    margin-right: 20px;
+					}
+					&-titleText{
+						color: var(--colorOne);
+				    font-size: 22px;
+				    font-weight: 600;
+					}
+				}
+				&_description{
+					margin: 1rem 0;
+					&-text{
+				    color: var(--colorThree);
+				    font-size: 16px;
+					}
+				}
+				&_numberTel1{
+					margin: 2rem 0;
+					&-title{
+				    font-weight: 600;
+				    color: var(--colorOne);
+				    font-size: 16px;
+				    margin-bottom: 2px;
+					}
+					&-text{
+						color: var(--colorThree);
+				    font-size: 16px;
+					}
+				}
+				&_numberTel2{
+					&-title{
+						font-weight: 600;
+				    color: var(--colorOne);
+				    font-size: 16px;
+				    margin-bottom: 2px;
+					}
+					&-text{
+				    color: var(--colorThree);
+    				font-size: 16px;
+					}
+				}
+			}
+			&-info2{
+				border-bottom: 1px solid #d9d9d9;
+    		padding-bottom: 2rem;
+				&_title{
+					display: flex;
+    			margin-top: 2rem;
+					&-titleIcon{
+						font-size: 20px;
+				    color: var(--colorFive);
+				    margin-right: 20px;
+					}
+					&-titleText{
+						color: var(--colorOne);
+				    font-size: 22px;
+				    font-weight: 600;
+					}
+				}
+				&_description{
+					margin: 1rem 0;
+					&-text{
+						color: var(--colorThree);
+    				font-size: 16px;
+					}
+				}
+				&_numberTel1{
+					margin: 2rem 0;
+					&-title{
+				    font-weight: 600;
+				    color: var(--colorOne);
+				    font-size: 16px;
+				    margin-bottom: 2px;
+					}
+					&-email{
+						color: var(--colorThree);
+				    font-size: 16px;
+					}
+				}
+				&_numberTel2{
+					&-title{
+						font-weight: 600;
+				    color: var(--colorOne);
+				    font-size: 16px;
+				    margin-bottom: 2px;
+					}
+					&-email{
+				    color: var(--colorThree);
+    				font-size: 16px;
+					}
+				}
+			}
+			&-info3{
+				&_title{
+					display: flex;
+    			margin-top: 2rem;
+					&-titleIcon{
+						font-size: 20px;
+				    color: var(--colorFive);
+				    margin-right: 20px;
+					}
+					&-titleText{
+						color: var(--colorOne);
+				    font-size: 22px;
+				    font-weight: 600;
+					}
+				}
+				&_description{
+					margin-top: 1rem;
+					&-text{
+				    color: var(--colorThree);
+				    font-size: 16px;
+					}
+					&-button{
+						background-color: transparent;
+				    padding: 0.5rem 0;
+				    width: 100%;
+				    text-align: left;
+				    color: var(--colorOne);
+				    font-weight: 550;
+				    font-size: 14px;
+				    cursor: pointer;
+				    margin: .6rem 0;
+				    &:after{
+				    	font-family: 'Font Awesome 5 Free';
+					    content: "\f061";
+					    color: #000;
+					    font-size: 15px;
+					    font-weight: bold;
+					    margin-left: 15px;
+				    }
+					}
+				}
+			}
+		}
+		&_section{
+			margin: 3rem 0;
+			@media screen and (min-width: 820px){
+				width: 65%;
+			}
+			& input, & textarea{
+				width: 100%;
+		    outline: none;
+		    font-size: 15px;
+		    padding: 0.8rem 0.9rem;
+		    margin-bottom: 1.3rem;
+		    border: 1px solid #CCC;
+		    color: #5e5e5e;
+			}
+			&-inputBtn {
+				@include button(tertiary);
+				&:after{
+					display: none;
+				}
+				border: 0;
+				color: #FFF;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/*{
+	@media screen and (min-width: 1200px){
+    max-width: 1280px;
+  }
+  @media screen and (max-width: 1999px){
+    max-width: 80vw;
+  }
+}*/
