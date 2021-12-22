@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="theme-color" content="#0096D9"/>
+    <meta name="msapplication-TileColor" content="#0096D9"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <link rel="icon" type="image/x-icon" href="./favicon.png"/>
+    <link rel="author" type="text/plain" href="./humans.txt"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml"/>
+    <title>Catalogo | Sitio web de compra de ropa</title>
+    <meta name="description" content="Este sitio contiene distintas modas de ropa estan categorisados por hombre, mujer, niño, se vende por partes separads">
+    <meta name="application-name" content="Catalogo | Sitio web de compra de ropa">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="glider.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="glider.min.js"></script>
+  </head>
+  <body>
+    <div class="navTop-container">
+      <div class="navTop-content">
+        <div class="navTop-content__logo">
+          <div class="navTop-content__logo-left"><i class="fas fa-car navTop-content__logo-left_icon"></i>
+            <p class="navTop-content__logo-left_text">FREE SHOPPING WORLDWIDE</p>
+          </div>
+          <div class="navTop-content__logo-right" id="toggleNav"><a class="navTop-content__logo-right_button toggle" id="navToggleBtn" href="#"><i class="fas fa-bars"></i></a></div>
+        </div>
+        <div class="navTop-content__right navToggle toggle" id="navToggle">
+          <div class="navTop-content__optionNav">
+            <div class="navTop-content__optionNav-languageAndValue">
+              <button class="navTop-content__optionNav-languageAndValue_btn">
+                <div class="navTop-content__optionNav-languageAndValue_btnContainer"><i class="fas fa-globe-europe navTop-content__optionNav-languageAndValue_btn-icon"></i>
+                  <p class="navTop-content__optionNav-languageAndValue_btn-text">United State</p>
+                </div><i class="fas fa-chevron-down navTop-content__optionNav-languageAndValue_btn-icon icon-down"></i>
+              </button>
+            </div>
+            <div class="navTop-content__optionNav-languageAndValue">
+              <button class="navTop-content__optionNav-languageAndValue_btn">
+                <p class="navTop-content__optionNav-languageAndValue_btn-text">USD</p><i class="fas fa-chevron-down navTop-content__optionNav-languageAndValue_btn-icon icon-down"></i>
+              </button>
+            </div>
+            <div class="navTop-content__optionNav-languageAndValue">
+              <button class="navTop-content__optionNav-languageAndValue_btn">
+                <p class="navTop-content__optionNav-languageAndValue_btn-text">English</p><i class="fas fa-chevron-down navTop-content__optionNav-languageAndValue_btn-icon icon-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="navTop-content__optionNav-contact">
+            <p class="navTop-content__optionNav-contact_contactText">Shopping</p>
+            <p class="navTop-content__optionNav-contact_contactText">FAQ</p>
+            <p class="navTop-content__optionNav-contact_contactText">Contact</p>
+          </div>
+          <div class="navTop-content__iconsSocial"><i class="fab fa-facebook navTop-content__iconsSocial-icon"></i><i class="fab fa-twitter navTop-content__iconsSocial-icon"></i><i class="fab fa-instagram navTop-content__iconsSocial-icon"></i><i class="fab fa-medium navTop-content__iconsSocial-icon"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="header-container">
+      <header class="header-content">
+        <div class="header-logo">
+          <p>Shooper.</p>
+          <div class="header-logo__logo-right" id="navToggleHeader"><a class="header-logo__logo" id="navToggleHeaderBtn" href="#headerNavContent"><i class="fas fa-bars"></i></a></div>
+        </div>
+        <div class="header-navToggle" id="headerNavContent">
+          <nav class="header-nav">
+            <ul class="header-nav__ul">
+              <li class="header-nav__ul-li"><a class="header-nav__ul-li_link" href="/">Home*</a></li>
+              <li class="header-nav__ul-li"><a class="header-nav__ul-li_link" href="catalog.html">Catalog*</a></li>
+              <li class="header-nav__ul-li"><a class="header-nav__ul-li_link" href="shop.html">Shop*</a></li>
+              <li class="header-nav__ul-li"><a class="header-nav__ul-li_link" href="about.html">About*</a></li>
+              <li class="header-nav__ul-li"><a class="header-nav__ul-li_link" href="blog.html">Blog*</a></li>
+              <li class="header-nav__ul-li"><a class="header-nav__ul-li_link" href="contact.html">Contact *</a></li>
+            </ul>
+          </nav>
+          <div class="header-icons"><i class="fas fa-search header-icons__icon"></i><i class="fas fa-user header-icons__icon"></i><i class="fas fa-heart header-icons__icon"></i><i class="fas fa-shopping-cart header-icons__icon"></i></div><a class="header-closeBtn" id="navToggleHeaderBtnClose" href="#"><i class="fas fa-times header-closeBtn_icon"></i></a>
+        </div>
+      </header>
+    </div>
+    <div class="noticeWeek-container">
+      <div class="noticeWeek-content">
+        <p class="noticeWeek-text">HAPPY HOLIDAY DEALS ON EVERYTHING</p>
+      </div>
+    </div>
+    <div class="catalog-container">
+      <aside class="catalog-sidebarLeft">
+        <div class="sidebarLeft-item" id="dropdown">
+          <button class="sidebarLeft-item_text">Category</button>
+          <ul class="sidebarLeft-item_ul" id="sidebarContentUlContent"><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="sidebarLeft-item" id="dropdown">
+          <button class="sidebarLeft-item_text">Category</button>
+          <ul class="sidebarLeft-item_ul" id="sidebarContentUlContent"><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="sidebarLeft-item" id="dropdown">
+          <button class="sidebarLeft-item_text">Category</button>
+          <ul class="sidebarLeft-item_ul" id="sidebarContentUlContent"><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="sidebarLeft-item" id="dropdown">
+          <button class="sidebarLeft-item_text">Category</button>
+          <ul class="sidebarLeft-item_ul" id="sidebarContentUlContent"><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress			</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="sidebarLeft-item" id="dropdown">
+          <button class="sidebarLeft-item_text">Category</button>
+          <ul class="sidebarLeft-item_ul" id="sidebarContentUlContent"><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="sidebarLeft-item" id="dropdown">
+          <button class="sidebarLeft-item_text">Category</button>
+          <ul class="sidebarLeft-item_ul" id="sidebarContentUlContent"><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div><a class="sidebarLeft-item_ul-a" id="linkSidebarTitle" href="#">All Products</a>
+            <div class="sidebarLeft-item_ul-content" id="sidebarContentList">
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+              <li class="sidebarLeft-item_ul-content_inputCheck">
+                <input class="sidebarLeft-item_ul-content_inputCheck-input" type="checkbox">
+                <label class="sidebarLeft-item_ul-content_inputCheck-text">A-line Dress</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <section class="catalog-sidebarRight">
+        <div class="glider-contain glider2-contain">
+          <div class="glider2">
+            <div class="gliderItem">
+              <div class="gliderItem-slide">
+                <p class="gliderItem-slide_text">2019 Summer<br>Collection</p>
+                <button class="gliderItem-slide_button">View Collection</button>
+              </div><img class="gliderItem-img" alt="Test" src="https://picsum.photos/id/1/600/300">
+            </div>
+            <div class="gliderItem">
+              <div class="gliderItem-slide">
+                <p class="gliderItem-slide_text">2019 Summer<br>Collection</p>
+                <button class="gliderItem-slide_button">View Collection</button>
+              </div><img class="gliderItem-img" alt="Test" src="https://picsum.photos/id/2/600/300">
+            </div>
+            <div class="gliderItem">
+              <div class="gliderItem-slide">
+                <p class="gliderItem-slide_text">2019 Summer<br>Collection</p>
+                <button class="gliderItem-slide_button">View Collection</button>
+              </div><img class="gliderItem-img" alt="Test" src="https://picsum.photos/id/3/600/300">
+            </div>
+          </div>
+          <div id="dots2"></div>
+        </div>
+        <div class="catalog-sidebarRight_clothing">
+          <section class="catalog-sidebarRight_clothing-header">
+            <div class="catalog-sidebarRight_clothing-header_left">
+              <p class="catalog-sidebarRight_clothing-header_left-title">Women's Clothing</p>
+              <p class="catalog-sidebarRight_clothing-header_left-breadcumb">Home > Catalog</p>
+            </div>
+            <div class="catalog-sidebarRight_clothing-header_right">
+              <button class="catalog-sidebarRight_clothing-header_right-button">Most popular</button>
+            </div>
+          </section>
+          <section class="catalog-sidebarRight_clothing-cardShip">
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+            <div class="catalog-sidebarRight_clothing-cardShip_ship">
+              <p class="catalog-sidebarRight_clothing-cardShip_ship-text">Shift dress</p><i class="fas fa-times catalog-sidebarRight_clothing-cardShip_ship-icon"></i>
+            </div>
+          </section>
+          <section class="catalog-sidebarRight_clothing-itemsShop">
+            <div class="topClothes-card">
+              <div class="topClothes-card__img" style="background-image: url(https://picsum.photos/id/4/600/300);"></div>
+              <p class="topClothes-card__titleType">Shoes</p>
+              <p class="topClothes-card__title">Leather mid-hell Sandalls</p>
+              <p class="topClothes-card__price">$ 129.00</p>
+            </div>
+            <div class="topClothes-card">
+              <div class="topClothes-card__img" style="background-image: url(https://picsum.photos/id/5/600/300);"></div>
+              <p class="topClothes-card__titleType">Shoes</p>
+              <p class="topClothes-card__title">Leather mid-hell Sandalls</p>
+              <p class="topClothes-card__price">$ 129.00</p>
+            </div>
+            <div class="topClothes-card">
+              <div class="topClothes-card__img" style="background-image: url(https://picsum.photos/id/6/600/300);"></div>
+              <p class="topClothes-card__titleType">Shoes</p>
+              <p class="topClothes-card__title">Leather mid-hell Sandalls</p>
+              <p class="topClothes-card__price">$ 129.00</p>
+            </div>
+            <div class="topClothes-card">
+              <div class="topClothes-card__img" style="background-image: url(https://picsum.photos/id/7/600/300);"></div>
+              <p class="topClothes-card__titleType">Shoes</p>
+              <p class="topClothes-card__title">Leather mid-hell Sandalls</p>
+              <p class="topClothes-card__price">$ 129.00</p>
+            </div>
+            <div class="topClothes-card">
+              <div class="topClothes-card__img" style="background-image: url(https://picsum.photos/id/8/600/300);"></div>
+              <p class="topClothes-card__titleType">Shoes</p>
+              <p class="topClothes-card__title">Leather mid-hell Sandalls</p>
+              <p class="topClothes-card__price">$ 129.00</p>
+            </div>
+            <div class="topClothes-card">
+              <div class="topClothes-card__img" style="background-image: url(https://picsum.photos/id/9/600/300);"></div>
+              <p class="topClothes-card__titleType">Shoes</p>
+              <p class="topClothes-card__title">Leather mid-hell Sandalls</p>
+              <p class="topClothes-card__price">$ 129.00</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <script>
+      window.addEventListener('load', function(){
+      	window._ = new Glider(document.querySelector('.glider2'), {
+      		slidesToShow: 1, //'auto',
+      		slidesToScroll: 1,
+      		itemWidth: 100,
+      		draggable: false,
+      		scrollLock: true,
+      		dots: '#dots2',
+      		rewind: true
+      	});
+      })
+    </script>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-top_title">
+            <p class="footer-top_title-text">Want style Ideals and Treats?</p>
+          </div>
+          <div class="footer-top_contentForm">
+            <input class="footer-top_contentForm-input" type="email" placeholder="Enter Email *" required="required"/>
+            <input class="footer-top_contentForm-inputBtn" type="submit" value="Subscribe"/>
+          </div>
+        </div>
+        <div class="footer-center">
+          <div class="footer-center_networkSocial">
+            <p class="footer-center_networkSocial-title">Shooper</p><i class="fab fa-facebook footer-center_networkSocial-icon"></i><i class="fab fa-twitter footer-center_networkSocial-icon"></i><i class="fab fa-instagram footer-center_networkSocial-icon"></i><i class="fab fa-medium footer-center_networkSocial-icon"></i><i class="fab fa-youtube footer-center_networkSocial-icon"></i>
+          </div>
+          <div class="footer-center_itemMenuContainer">
+            <div class="footer-center_itemMenu">
+              <p class="footer-center_itemMenu-title">SUPPORT</p><a class="footer-center_itemMenu-itemLink" href="#">Contact Us</a><a class="footer-center_itemMenu-itemLink" href="#">FAQs</a><a class="footer-center_itemMenu-itemLink" href="#">Size Guide</a><a class="footer-center_itemMenu-itemLink" href="#">Shipping & Returns</a>
+            </div>
+            <div class="footer-center_itemMenu">
+              <p class="footer-center_itemMenu-title">SHOP</p><a class="footer-center_itemMenu-itemLink" href="#">Men's Shopping</a><a class="footer-center_itemMenu-itemLink" href="#">Women's Shopping</a><a class="footer-center_itemMenu-itemLink" href="#">Kids' Shopping</a><a class="footer-center_itemMenu-itemLink" href="#">Discounts</a>
+            </div>
+            <div class="footer-center_itemMenu">
+              <p class="footer-center_itemMenu-title">COMPANY</p><a class="footer-center_itemMenu-itemLink" href="#">Our Story</a><a class="footer-center_itemMenu-itemLink" href="#">Careers</a><a class="footer-center_itemMenu-itemLink" href="#">Terms & Conditions</a><a class="footer-center_itemMenu-itemLink" href="#">Privacy & Cookie policy</a>
+            </div>
+            <div class="footer-center_itemMenu">
+              <p class="footer-center_itemMenu-title">CONTACT</p><a class="footer-center_itemMenu-itemLink" href="#">1-202-555-0105</a><a class="footer-center_itemMenu-itemLink" href="#">1-202-555-0106</a><a class="footer-center_itemMenu-itemLink" href="#">help@shopper.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom_left">
+          <p class="footer-bottom_left-text">&copy; 2021 All rights reserved. Designed by JMMoriones</p>
+        </div>
+        <div class="footer-bottom_right"></div>
+      </div>
+    </div>
+  </body>
+  <script src="/reload/reload.js"></script>
+  <script src="script.js"></script>
+</html>

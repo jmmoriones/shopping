@@ -1,5 +1,10 @@
 extends ../templates/template.pug
-
+block metatags
+	-var title= "Blog post | Sitio web de compra de ropa"
+	-var description= "Este sitio contiene distintas modas de ropa estan categorisados por hombre, mujer, niño, se vende por partes separads"
+	title= title
+	meta(name="description", content=description)
+	meta(name="application-name", content=title)
 block content
 	section.blogPost-container
 		div.blogPost-content

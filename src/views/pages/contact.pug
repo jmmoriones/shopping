@@ -1,5 +1,10 @@
 extends ../templates/template
-
+block metatags
+	-var title= "Contacto | Sitio web de compra de ropa"
+	-var description= "Este sitio contiene distintas modas de ropa estan categorisados por hombre, mujer, niño, se vende por partes separads"
+	title= title
+	meta(name="description", content=description)
+	meta(name="application-name", content=title)
 block content
 	div.contact-container
 		div.contact-content

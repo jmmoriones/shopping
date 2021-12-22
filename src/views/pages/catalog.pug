@@ -1,6 +1,12 @@
 extends ../templates/template
 include ../blocks/noticeWeek.pug
 include ../components/topClothesItem.pug
+block metatags
+	-var title= "Catalogo | Sitio web de compra de ropa"
+	-var description= "Este sitio contiene distintas modas de ropa estan categorisados por hombre, mujer, niño, se vende por partes separads"
+	title= title
+	meta(name="description", content=description)
+	meta(name="application-name", content=title)
 block content
 	+noticeWeek
 	.catalog-container

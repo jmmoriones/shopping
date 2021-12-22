@@ -1,13 +1,15 @@
+include ../components/metatags.pug
 include ../blocks/navTop.pug
 include ../blocks/header.pug
 include ../blocks/fotter.pug
 doctype html
 html(lang="es")
 	head
-		title=title
-		meta(name="viewport" content="width=device-width,user-scalable=no, initial-scale=1")
 		meta(charset="UTF-8")
-		block metatag
+		meta(name="viewport" content="width=device-width,user-scalable=no, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		+metatagsWebApp()
+		block metatags
 		link(rel="stylesheet", href="fontawesome.min.css")
 		link(rel="stylesheet", href="glider.min.css")
 		link(rel="stylesheet", href="styles.css")

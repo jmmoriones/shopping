@@ -9,7 +9,7 @@ mixin header
 			#headerNavContent.header-navToggle
 				nav.header-nav
 					ul.header-nav__ul
-						each val in [{title: "Home*", link: "/"}, {title: "Catalog*", link: "catalog"}, {title: "Shop*", link: "shop"}, {title: "About*", link: "about"}, {title: "Blog*", link: "blog"}, {title: "Contact *", link: "contact"}]
+						each val in [{title: "Home*", link: "/"}, {title: "Catalog*", link: "catalog.html"}, {title: "Shop*", link: "shop.html"}, {title: "About*", link: "about.html"}, {title: "Blog*", link: "blog.html"}, {title: "Contact *", link: "contact.html"}]
 							li.header-nav__ul-li
 								a.header-nav__ul-li_link(href=`${val.link}`)= val.title
 				.header-icons

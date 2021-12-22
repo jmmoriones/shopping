@@ -8,6 +8,13 @@ include ../blocks/about/aboutGallery.pug
 include ../blocks/about/aboutMessageUser.pug
 include ../blocks/about/aboutInstagramImage.pug
 
+block metatags
+	-var title= "About | Sitio web de compra de ropa"
+	-var description= "Este sitio contiene distintas modas de ropa estan categorisados por hombre, mujer, niño, se vende por partes separads"
+	title= title
+	meta(name="description", content=description)
+	meta(name="application-name", content=title)
+
 block content
 	+aboutSlide([{image: "https://picsum.photos/id/10/1200/500", text: "We believe we can all make a stylish"}])
 	+aboutStory

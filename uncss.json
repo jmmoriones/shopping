@@ -1,0 +1,19 @@
+{
+  "ignore": [
+  	".fa-youtube-play",
+  	".Youtube",
+  	".Youtube-wrapper",
+  	".Youtube iframe",
+  	".Youtube a",
+    ".Header.is-active",
+    ".Panel.is-active",
+    ".hamburger--spring.is-active .hamburger-inner",
+    ".hamburger--spring.is-active .hamburger-inner::before",
+    ".hamburger--spring.is-active .hamburger-inner::after",
+    ".GoogleMap",
+    ".GoogleMap a",
+    ".GoogleMap a:hover",
+    ".GoogleMap iframe"
+  ],
+  "ignoreSheets": []
+}
