@@ -1,0 +1,77 @@
+.formLogin{
+  width: 88%;
+  @media screen and (min-width: 850px){
+  	width: 500px;
+  }
+  &-div{
+  	&_inputSubmit{
+  		background-color: #1f1f1f;
+			padding: 1em 2em;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			border: 0;
+			color: #FFF;
+			cursor: pointer;
+			width: 80%;
+  	}
+  	&_inputEmail, &_inputPassword{
+  		width: 100%;
+			outline: none;
+			font-size: 15px;
+			padding: 0.8rem 0.9rem;
+			margin-bottom: .5rem;
+			border: 1px solid #CCC;
+			color: #5e5e5e;
+  	}
+  	&-submit{
+  		text-align:center;
+  		margin-top: 1rem;
+  	}
+  	&_labelEmail, &_labelPassword{
+  		color: #5e5e5e;
+			font-size: 18px;
+			margin-bottom: 0.5rem;
+			display: block;
+  	}
+  	&_dataFalse{
+  		margin-bottom: 0.5rem;
+	    font-size: 18px;
+	    color: rgb(244, 67, 54);
+  	}
+  }
+}
+
+.formulario{
+	&-container{
+		height: 100vh;
+		padding-top: 2rem;
+	}
+	&-content_login{
+		margin: auto;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		padding-top: 1rem;
+	}
+	&-header{
+		margin: auto;
+    max-width: 400px;
+		&_texto{
+			text-align: center;
+	    font-size: 2em;
+	    font-family: 'Segoe UI Bold';
+	    color: #1f1f1f;
+	    line-height: 1em;
+	    margin-bottom: 1rem;
+		}
+		&_subtexto{
+			text-align: center;
+	    font-size: .9rem;
+	    color: #9d9ea0;
+	    line-height: 1em;
+	    text-align: center;
+		}
+	}
+}

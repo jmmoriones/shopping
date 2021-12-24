@@ -1,0 +1,25 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width,user-scalable=no, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		title Login Shopping
+		link(rel="stylesheet", href="./styles.css")
+	body(id="login")
+		.formulario-container
+			.formulario-header
+				h1.formulario-header_texto Shooper.
+				p.formulario-header_subtexto Inicia sesión en el sistema de datos de "Shooper", para agregar contenido relacionado con prendas de vestir.
+			section.formulario-content_login
+				form#formulario-login.formLogin
+					div.formLogin-div
+						label.formLogin-div_labelEmail(for="loginEmail") Email: 
+						input.formLogin-div_inputEmail(type="email" id="loginEmail" name="loginEmail")
+					div.formLogin-div
+						label.formLogin-div_labelPassword(for="loginPassword") Password: 
+						input.formLogin-div_inputPassword(type="password" id="loginPassword" name="loginPassword")
+					div.formLogin-div.formLogin-div-submit
+						p#dataFalse.formLogin-div_dataFalse
+						input.formLogin-div_inputSubmit(type="submit" id="FormButtonLogin" value="Enviar datos")
+	script(src="./script.js")

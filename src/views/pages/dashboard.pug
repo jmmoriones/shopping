@@ -1,0 +1,30 @@
+include ../components/metatags
+doctype html
+html(lang="es")
+	head
+		+metatagsWebApp()
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width,user-scalable=no, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		title Dashboard
+		link(rel="stylesheet", href="./styles.css")
+		link(rel="stylesheet", href="fontawesome.min.css")
+	body(id="dashboard")
+		div.dashboard-content
+			.dashboard-content_header
+				h1.dashboard-content_header-title Dashboard
+				a#outLoginDashboard.dashboard-content_header-link(href="#") Salir
+	script(src="./script.js")
+	//script.
+		const linkOutLogin = document.getElementById("outLoginDashboard")
+		let user = localStorage.getItem("userSession")
+		if(user){
+			window.location.href
+		}else{
+			window.location.href = "login.html"
+		}
+		linkOutLogin.addEventListener("click", function(e){
+			e.preventDefault()
+			localStorage.removeItem("userSession")
+			window.location.href = "login.html"
+		})

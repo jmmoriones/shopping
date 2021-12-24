@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Login Shopping</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body id="login">
+    <div class="formulario-container">
+      <div class="formulario-header">
+        <h1 class="formulario-header_texto">Shooper.</h1>
+        <p class="formulario-header_subtexto">Inicia sesión en el sistema de datos de "Shooper", para agregar contenido relacionado con prendas de vestir.</p>
+      </div>
+      <section class="formulario-content_login">
+        <form class="formLogin" id="formulario-login">
+          <div class="formLogin-div">
+            <label class="formLogin-div_labelEmail" for="loginEmail">Email: </label>
+            <input class="formLogin-div_inputEmail" type="email" id="loginEmail" name="loginEmail">
+          </div>
+          <div class="formLogin-div">
+            <label class="formLogin-div_labelPassword" for="loginPassword">Password: </label>
+            <input class="formLogin-div_inputPassword" type="password" id="loginPassword" name="loginPassword">
+          </div>
+          <div class="formLogin-div formLogin-div-submit">
+            <p class="formLogin-div_dataFalse" id="dataFalse"></p>
+            <input class="formLogin-div_inputSubmit" type="submit" id="FormButtonLogin" value="Enviar datos">
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

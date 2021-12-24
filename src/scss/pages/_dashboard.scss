@@ -1,0 +1,48 @@
+.dashboard{
+	&-content{
+		&_header{
+			background: var(--colorFive);
+    	padding: 0.5rem 2em;
+    	display: flex;
+    	align-items: center;
+    	@media screen and (max-width: 300px){
+    		flex-direction: column;
+    	}
+			&-title{
+				line-height: 1em;
+				color: #ffffff;
+				text-align: center;
+				font-size: 30px;
+				flex: 1;
+			}
+			&-link{
+				text-decoration: none;
+				color: var(--colorTwo);
+				font-size: 18px;
+				flex: .1;
+    		text-align: right;
+    		@media screen and (max-width: 300px){
+    			margin-top: 0.5em;
+    			padding-bottom: 0.3rem;
+    		}
+    		&:hover{
+    			transform: scale(1.1);
+			    transition: transform .1s ease-in-out;
+			    color: #FFF;
+    		}
+    		&:after {
+			    font-family: 'Font Awesome 5 Free';
+			    content: "\f2f5";
+			    color: #1f1f1f;
+			    font-size: 16px;
+			    font-weight: bold;
+			    color: var(--colorTwo);
+			    margin-left: 8px;
+				}
+			}
+		}
+	}
+	&-title{
+
+	}
+}

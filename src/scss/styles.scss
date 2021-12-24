@@ -41,6 +41,8 @@
 @import 'pages/contact';
 @import 'pages/blog';
 @import 'pages/blog-post';
+@import 'pages/login';
+@import 'pages/dashboard';
 
 
 .sidebarLeft-item_ul, .sidebarLeft-item_ul-content{
@@ -51,4 +53,7 @@
 .toggleSidebarList{
 	height: auto;
 	transition: height .3s;
+}
+#dashboard{
+	display: none;
 }

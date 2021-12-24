@@ -110,7 +110,8 @@ img {
       .navTop-content__optionNav {
         display: flex;
         justify-content: start;
-        align-items: center; } }
+        align-items: center;
+        flex: 1 0 42%; } }
     .navTop-content__optionNav-languageAndValue_btn {
       display: flex;
       justify-items: center;
@@ -146,10 +147,13 @@ img {
           margin: 0; } }
     .navTop-content__optionNav-contact {
       display: flex;
-      justify-content: end; }
+      justify-content: end;
+      flex: 1 0 20%;
+      align-items: center; }
       @media screen and (max-width: 64em) {
         .navTop-content__optionNav-contact {
-          flex-direction: column; } }
+          flex-direction: column;
+          align-items: start; } }
       .navTop-content__optionNav-contact_contactText {
         font-size: .9em; }
         .navTop-content__optionNav-contact_contactText:nth-child(2) {
@@ -2359,6 +2363,108 @@ div#dots2 {
     .blogPost-content_latestBlog-card_button:hover:after {
       margin-left: 20px; }
 
+.formLogin {
+  width: 88%; }
+  @media screen and (min-width: 850px) {
+    .formLogin {
+      width: 500px; } }
+  .formLogin-div_inputSubmit {
+    background-color: #1f1f1f;
+    padding: 1em 2em;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    width: 80%; }
+  .formLogin-div_inputEmail, .formLogin-div_inputPassword {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 0.8rem 0.9rem;
+    margin-bottom: .5rem;
+    border: 1px solid #CCC;
+    color: #5e5e5e; }
+  .formLogin-div-submit {
+    text-align: center;
+    margin-top: 1rem; }
+  .formLogin-div_labelEmail, .formLogin-div_labelPassword {
+    color: #5e5e5e;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    display: block; }
+  .formLogin-div_dataFalse {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: #f44336; }
+
+.formulario-container {
+  height: 100vh;
+  padding-top: 2rem; }
+
+.formulario-content_login {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem; }
+
+.formulario-header {
+  margin: auto;
+  max-width: 400px; }
+  .formulario-header_texto {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Segoe UI Bold';
+    color: #1f1f1f;
+    line-height: 1em;
+    margin-bottom: 1rem; }
+  .formulario-header_subtexto {
+    text-align: center;
+    font-size: .9rem;
+    color: #9d9ea0;
+    line-height: 1em;
+    text-align: center; }
+
+.dashboard-content_header {
+  background: var(--colorFive);
+  padding: 0.5rem 2em;
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 300px) {
+    .dashboard-content_header {
+      flex-direction: column; } }
+  .dashboard-content_header-title {
+    line-height: 1em;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    flex: 1; }
+  .dashboard-content_header-link {
+    text-decoration: none;
+    color: var(--colorTwo);
+    font-size: 18px;
+    flex: .1;
+    text-align: right; }
+    @media screen and (max-width: 300px) {
+      .dashboard-content_header-link {
+        margin-top: 0.5em;
+        padding-bottom: 0.3rem; } }
+    .dashboard-content_header-link:hover {
+      transform: scale(1.1);
+      transition: transform .1s ease-in-out;
+      color: #FFF; }
+    .dashboard-content_header-link:after {
+      font-family: 'Font Awesome 5 Free';
+      content: "\f2f5";
+      color: #1f1f1f;
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--colorTwo);
+      margin-left: 8px; }
+
 .sidebarLeft-item_ul, .sidebarLeft-item_ul-content {
   height: 0px;
   overflow: hidden;
@@ -2367,3 +2473,6 @@ div#dots2 {
 .toggleSidebarList {
   height: auto;
   transition: height .3s; }
+
+#dashboard {
+  display: none; }
