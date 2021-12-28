@@ -1,0 +1,265 @@
+extends ../templates/template.pug
+include ../components/topClothesItem
+block metatags
+	-var title= "Producto de Catalogo | Sitio web de compra de ropa"
+	-var description= "Este sitio contiene distintas modas de ropa estan categorisados por hombre, mujer, niño, se vende por partes separads"
+	title= title
+	meta(name="description", content=description)
+	meta(name="application-name", content=title)
+
+block content
+	.container-product
+		section#cataloProduct.content-product
+			article.productData
+				div.productData-galleryProduct
+					img#productGalleryScreen.productData-galleryProduct_image(src="")
+					div.productData-galleryProduct_smallImage
+						img(onclick="changeImage(event)" src="https://picsum.photos/id/75/600/800").productData-galleryProduct_smallImage-image.image-select
+						img(onclick="changeImage(event)" src="https://picsum.photos/id/76/600/800").productData-galleryProduct_smallImage-image
+						img(onclick="changeImage(event)" src="https://picsum.photos/id/77/600/800").productData-galleryProduct_smallImage-image
+				div.productData-information
+				.productData-information_header
+					.productData-information_header-divsn1
+						.productData-information_header-divsn1_titleTop
+							p.productData-information_header-divsn1_titleTop-title Sneakers
+							div.productData-information_header-divsn1_titleTop-iconStars
+								.productData-information_header-divsn1_titleTop-iconStars_stars
+									i.far.fa-star
+									i.fas.fa-star
+									i.fas.fa-star
+									i.fas.fa-star
+									i.fas.fa-star
+								p.productData-information_header-divsn1_titleTop-iconStars_reviews Reviews(6)
+						h1.productData-information_header-divsn1_title Leather Sneakers
+						.productData-information_header-divsn1_price
+							p.productData-information_header-divsn1_price-valueDescount 115.00
+							p.productData-information_header-divsn1_price-value 85.00
+							p.productData-information_header-divsn1_price-valueText (In Stock)
+					.productData-information_header-divsn2
+						.productData-information_header-divsn2_colorContent
+							p.productData-information_header-divsn2_colorContent-text Color: <strong>White, Blue</strong>
+						.productData-information_header-divsn2_imagesContent
+							img(src="https://picsum.photos/id/77/75/75")
+							img(src="https://picsum.photos/id/78/75/75")
+					.productData-information_header-divsn3
+						p.productData-information_header-divsn3_size Size: <strong>7.5 US</strong>
+						.productData-information_header-divsn3_buttons
+							button.productData-information_header-divsn3_buttons-btn 6
+							button.productData-information_header-divsn3_buttons-btn 6.5
+							button.productData-information_header-divsn3_buttons-btn 6.6
+							button.productData-information_header-divsn3_buttons-btn 7
+							button.productData-information_header-divsn3_buttons-btn 8
+							button.productData-information_header-divsn3_buttons-btn 9
+							button.productData-information_header-divsn3_buttons-btn 9
+							button.productData-information_header-divsn3_buttons-btn 10
+							button.productData-information_header-divsn3_buttons-btn 11
+							button.productData-information_header-divsn3_buttons-btn 12
+							button.productData-information_header-divsn3_buttons-btn 13
+							button.productData-information_header-divsn3_buttons-btn 14
+							button.productData-information_header-divsn3_buttons-btn 15
+							button.productData-information_header-divsn3_buttons-btn 16
+						a.productData-information_header-divsn3_popupSize(href="#") Size Chart
+					.productData-information_header-divsnButtons
+						select.productData-information_header-divsnButtons_numProducts
+							option 1
+							option 2
+							option 3
+							option 4
+							option 5
+						button.productData-information_header-divsnButtons_btnCar Add to Car
+						button.productData-information_header-divsnButtons_btnHeart Wishlist
+					p.productData-information_header-divsn4 Is your size/color sold out? <a href="#">Join the Wait List!</a>
+					.productData-information_header-share
+						p.productData-information_header-share_text Share:
+						.productData-information_header-share_content
+							a.productData-information_header-share_content-link(href="#")
+								i.fab.fa-twitter.productData-information_header-share_content-link_Icon
+							a.productData-information_header-share_content-link(href="#")
+								i.fab.fa-facebook.productData-information_header-share_content-link_Icon
+							a.productData-information_header-share_content-link(href="#")
+								i.fab.fa-pinterest.productData-information_header-share_content-link_Icon
+			
+			#content2.productData-tabs
+				.productData-tabs-buttons
+					button.link1.productData-tabs-buttons_btn.link-select(onclick="tabsProductDescription(event, '1content')") Description
+					button.link2.productData-tabs-buttons_btn(onclick="tabsProductDescription(event, '2content')") Size &amp; Fite
+					button.link3.productData-tabs-buttons_btn(onclick="tabsProductDescription(event, '3content')") Shipping &amp; Return
+				.productData-tabs-contentButtons
+					#1content.productData-tabs-contentButtons_content.contentItem1
+						p.productData-tabs-contentButtons_content-text
+							| Won't herb first male seas, beast. Let upon, female upon third fifth every. Man subdue rule after years herb after form. And image may, morning. Behold in tree day sea that together cattle whose. Fifth gathering brought bearing. Abundantly creeping whose. Beginning form have void two. A whose.
+						div.productData-tabs-contentButtons_content-left
+							p.productData-tabs-contentButtons_content-left_text <strong>SKU: </strong> #61590437
+							p.productData-tabs-contentButtons_content-left_text <strong>Occasion: </strong> Lifestyle, Sport
+							p.productData-tabs-contentButtons_content-left_text <strong>Country: </strong> Italy
+						div.productData-tabs-contentButtons_content-right
+							p.productData-tabs-contentButtons_content-right_text <strong>Outer: </strong> Leather 100%, Polyamide 100%
+							p.productData-tabs-contentButtons_content-right_text <strong>Lining: </strong> Polyester 100%
+							p.productData-tabs-contentButtons_content-right_text <strong>CounSoletry: </strong> Rubber 100%
+					#2content.productData-tabs-contentButtons_content.contentItem2
+						div.productData-tabs-contentButtons_content-cnt
+							ul.productData-tabs-contentButtons_content-ul
+								p.productData-tabs-contentButtons_content-ul_title Fitting information:
+								li.productData-tabs-contentButtons_content-ul_li Upon seas hath every years have whose subdue creeping they're it were.
+								li.productData-tabs-contentButtons_content-ul_li Make great day bearing.
+								li.productData-tabs-contentButtons_content-ul_li For the moveth is days don't said days.
+							div.productData-tabs-contentButtons_content-dataProduct
+								p.productData-tabs-contentButtons_content-dataProduct_title Model measurements:
+								p.productData-tabs-contentButtons_content-dataProduct_text Height: 1.80 m
+								p.productData-tabs-contentButtons_content-dataProduct_text Bust/Chest: 89 cm
+								p.productData-tabs-contentButtons_content-dataProduct_text Hips: 91 cm
+								p.productData-tabs-contentButtons_content-dataProduct_text Waist: 65 cm
+								p.productData-tabs-contentButtons_content-dataProduct_text Model size: M
+
+					#3content.productData-tabs-contentButtons_content.contentItem3
+						table.productData-tabs-contentButtons_content-table
+							thead.productData-tabs-contentButtons_content-table_head
+								tr.productData-tabs-contentButtons_content-table_head-tr
+									th.productData-tabs-contentButtons_content-table_head-tr_th Shipping Options
+									th.productData-tabs-contentButtons_content-table_head-tr_th Delivery Time
+									th.productData-tabs-contentButtons_content-table_head-tr_th Price
+							tbody.productData-tabs-contentButtons_content-table_body
+								tr.productData-tabs-contentButtons_content-table_body-tr
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Shipping Options') Standard Shipping
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Delivery Time') Delivery in 5 - 7 working days
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Price') $8.00
+								tr.productData-tabs-contentButtons_content-table_body-tr
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Shipping Options') Express Shipping
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Delivery Time') Delivery in 3 - 5 working days
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Price') $12.00
+								tr.productData-tabs-contentButtons_content-table_body-tr
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Shipping Options') 1 - 2 day Shipping
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Delivery Time') Delivery in 1 - 2 working days
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Price') $12.00
+								tr.productData-tabs-contentButtons_content-table_body-tr
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Shipping Options') Free Shipping
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Delivery Time') Living won't the He one every subdue meat replenish face was you morning firmament darkness.
+									td.productData-tabs-contentButtons_content-table_body-tr_td(data-label='Price') $0.00
+			article.productData-likePorducts
+				p.productData-likePorducts_title You might also like
+				.productData-likePorducts_products
+					+topClothesItem('https://picsum.photos/id/79/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+					+topClothesItem('https://picsum.photos/id/80/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+					+topClothesItem('https://picsum.photos/id/81/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+					+topClothesItem('https://picsum.photos/id/82/400/450', 'Shoes', 'Leather mid-heel Sandals', '129.00')
+			article.productData-comments
+				div.productData-comments_top
+					h2.productData-comments_top-title Customer Reviews
+					div.productData-comments_top-activation
+						button.productData-comments_top-activation_btnOrder Sort by: Newest
+						div.productData-comments_top-activation_starsReview
+							.productData-comments_top-activation_starsReview-stars
+								i.far.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+							p.productData-comments_top-activation_starsReview-text Reviews (3)
+						button.productData-comments_top-activation_btnWrite Write Review
+				div.productData-comments_comment
+					div.productData-comments_comment-imageUser
+						img.productData-comments_comment-imageUser_img(src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png")
+					div.productData-comments_comment-data
+						div.productData-comments_comment-data_stars
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+						p.productData-comments_comment-data_userPublication Logan Edwards, 25 Jul 2019
+						div.productData-comments_comment-data_commentUser
+							p.productData-comments_comment-data_commentUser-titleComment So cute!
+							p.productData-comments_comment-data_commentUser-textComment Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque modi sunt recusandae harum porro dicta debitis soluta tempore! Facere, quasi cum? Quis maxime ipsam nam odit atque exercitationem veniam dolorem.
+						div.productData-comments_comment-data_activeUser
+							div.productData-comments_comment-data_activeUser-left
+								p.productData-comments_comment-data_activeUser-left_motivation Was this review helpful ?
+								div.productData-comments_comment-data_activeUser-left_interaction
+									a(href="#").productData-comments_comment-data_activeUser-left_interaction-like
+										i.far.fa-thumbs-up
+										span 3
+									a(href="#").productData-comments_comment-data_activeUser-left_interaction-like
+										i.far.fa-thumbs-down
+										span 0
+							div.productData-comments_comment-data_activeUser-right
+								p.productData-comments_comment-data_activeUser-right_numberComments Comments (0)
+								button.productData-comments_comment-data_activeUser-right_btn Comment
+				div.productData-comments_comment
+					div.productData-comments_comment-imageUser
+						img.productData-comments_comment-imageUser_img(src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png")
+					div.productData-comments_comment-data
+						div.productData-comments_comment-data_stars
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+						p.productData-comments_comment-data_userPublication Logan Edwards, 25 Jul 2019
+						div.productData-comments_comment-data_commentUser
+							p.productData-comments_comment-data_commentUser-titleComment So cute!
+							p.productData-comments_comment-data_commentUser-textComment Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque modi sunt recusandae harum porro dicta debitis soluta tempore! Facere, quasi cum? Quis maxime ipsam nam odit atque exercitationem veniam dolorem.
+						div.productData-comments_comment-data_activeUser
+							div.productData-comments_comment-data_activeUser-left
+								p.productData-comments_comment-data_activeUser-left_motivation Was this review helpful ?
+								div.productData-comments_comment-data_activeUser-left_interaction
+									a(href="#").productData-comments_comment-data_activeUser-left_interaction-like
+										i.far.fa-thumbs-up
+										span 3
+									a(href="#").productData-comments_comment-data_activeUser-left_interaction-like
+										i.far.fa-thumbs-down
+										span 0
+							div.productData-comments_comment-data_activeUser-right
+								p.productData-comments_comment-data_activeUser-right_numberComments Comments (0)
+								button.productData-comments_comment-data_activeUser-right_btn Comment
+				div.productData-comments_comment
+					div.productData-comments_comment-imageUser
+						img.productData-comments_comment-imageUser_img(src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png")
+					div.productData-comments_comment-data
+						div.productData-comments_comment-data_stars
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+						p.productData-comments_comment-data_userPublication Logan Edwards, 25 Jul 2019
+						div.productData-comments_comment-data_commentUser
+							p.productData-comments_comment-data_commentUser-titleComment So cute!
+							p.productData-comments_comment-data_commentUser-textComment Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque modi sunt recusandae harum porro dicta debitis soluta tempore! Facere, quasi cum? Quis maxime ipsam nam odit atque exercitationem veniam dolorem.
+						div.productData-comments_comment-data_activeUser
+							div.productData-comments_comment-data_activeUser-left
+								p.productData-comments_comment-data_activeUser-left_motivation Was this review helpful ?
+								div.productData-comments_comment-data_activeUser-left_interaction
+									a(href="#").productData-comments_comment-data_activeUser-left_interaction-like
+										i.far.fa-thumbs-up
+										span 3
+									a(href="#").productData-comments_comment-data_activeUser-left_interaction-like
+										i.far.fa-thumbs-down
+										span 0
+							div.productData-comments_comment-data_activeUser-right
+								p.productData-comments_comment-data_activeUser-right_numberComments Comments (0)
+								button.productData-comments_comment-data_activeUser-right_btn Comment
+	script.
+		const productGalleryScreen = document.getElementById("productGalleryScreen"),
+			imageProductGalleryCollection = document.getElementsByClassName("productData-galleryProduct_smallImage-image");
+		productGalleryScreen.src = imageProductGalleryCollection[0].src;
+		function changeImage(e){
+			imageProductGalleryCollection[0].classList.remove("image-select");
+			productGalleryScreen.src = e.target.currentSrc
+			//console.log(e)
+			for(var i = 0; i < imageProductGalleryCollection.length; i++){
+				//console.log(imageProductGalleryCollection[i])
+				imageProductGalleryCollection[i].className = imageProductGalleryCollection[i].className.replace(" image-select", "");
+			}
+			e.currentTarget.className += " image-select";
+		}
+		function tabsProductDescription(et, idTab){
+			const contentProduct = document.getElementsByClassName('productData-tabs-contentButtons_content');
+			for(var i = 0; i < contentProduct.length; i++){
+				contentProduct[i].style.display="none";
+			}
+			var tabButtons = document.getElementsByClassName('productData-tabs-buttons_btn');
+			for(var i = 0; i < tabButtons.length; i++){
+				tabButtons[i].className = tabButtons[i].className.replace(" link-select", "");
+			}
+			document.getElementById(idTab).style.display = "block";
+			et.currentTarget.className += " link-select";
+		}

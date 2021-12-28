@@ -1,13 +1,13 @@
 .dashboard{
 	&-content{
 		&_header{
-			background: var(--colorFive);
-    	padding: 0.5rem 2em;
-    	display: flex;
-    	align-items: center;
-    	@media screen and (max-width: 300px){
-    		flex-direction: column;
-    	}
+			background: #3598db;
+			padding: 0.5rem 2em;
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 300px){
+				flex-direction: column;
+			}
 			&-title{
 				line-height: 1em;
 				color: #ffffff;
@@ -20,26 +20,80 @@
 				color: var(--colorTwo);
 				font-size: 18px;
 				flex: .1;
-    		text-align: right;
-    		@media screen and (max-width: 300px){
-    			margin-top: 0.5em;
-    			padding-bottom: 0.3rem;
-    		}
-    		&:hover{
-    			transform: scale(1.1);
-			    transition: transform .1s ease-in-out;
-			    color: #FFF;
-    		}
-    		&:after {
-			    font-family: 'Font Awesome 5 Free';
-			    content: "\f2f5";
-			    color: #1f1f1f;
-			    font-size: 16px;
-			    font-weight: bold;
-			    color: var(--colorTwo);
-			    margin-left: 8px;
+				text-align: right;
+				@media screen and (max-width: 300px){
+					margin-top: 0.5em;
+					padding-bottom: 0.3rem;
+				}
+				&:hover{
+					transform: scale(1.1);
+					transition: transform .1s ease-in-out;
+					color: #FFF;
+				}
+				&:after {
+					font-family: 'Font Awesome 5 Free';
+					content: "\f2f5";
+					color: #1f1f1f;
+					font-size: 16px;
+					font-weight: bold;
+					color: var(--colorTwo);
+					margin-left: 8px;
 				}
 			}
+		}
+		&_head{
+			background-image: url(./img/banner-header.png), linear-gradient(#3598db8f, #3598db8f);
+	    background-repeat: no-repeat;
+	    background-blend-mode: multiply;
+	    background-size: cover;
+	    min-height: 220px;
+	    width: 100%;
+	    display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+			&-navigation {
+				max-width: 1200px;
+		    margin: auto;
+		    flex: 100%;
+    		&_ul{
+    			padding-left: 0;
+			    display: flex;
+			    justify-content: space-between;
+			    width: 100%;
+    			&-li{
+    				list-style: none;
+    				&_a{
+    					text-decoration: none;
+					    color: #f5f5f5;
+					    font-size: 1rem;
+					    display: flex;
+					    flex-direction: column-reverse;
+					    align-items: center;
+					    font-weight: 600;
+					    transition: .3s all ease-in-out;
+					    padding: 1rem 0.7rem;
+					    border-radius: 10px;
+					    &-i{
+						    font-size: 1.8rem;
+						    color: #FFF;
+						    margin-bottom: 3px;
+	    				}
+	    				&:hover {
+							  background-color: #3598db;
+							}
+    				}
+    			}
+    		}
+			}
+		}
+		&_container{
+			max-width: 1200px;
+	    margin: auto;
+	    position: relative;
+	    top: -2.5rem;
+	    background-color: #f5f5f5;
+	    padding: 1rem;
+	    border-radius: 10px;
 		}
 	}
 	&-title{
